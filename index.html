@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Restores a deep link captured by 404.html on GitHub Pages (SPA fallback).
+      (function () {
+        var redirect = sessionStorage.getItem('redirect');
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/yatrarail/train-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YatraRail — Book Train Tickets</title>
+    <meta name="description" content="YatraRail — an Indian Railway-inspired ticket booking demo platform. Academic/portfolio project, not affiliated with Indian Railways or IRCTC." />
+    <script type="module" crossorigin src="/yatrarail/assets/index-CKgKj7PP.js"></script>
+    <link rel="stylesheet" crossorigin href="/yatrarail/assets/index-ymfPR6rV.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
