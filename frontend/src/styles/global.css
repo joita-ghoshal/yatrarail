@@ -1,0 +1,27 @@
+/* ==========================================================================
+   YatraRail — STYLESHEET ENTRY POINT
+
+   This file is imported once, from main.jsx, and nothing else. It owns no rules
+   of its own; it fixes the order the design system is loaded in, which matters
+   because the layers deliberately override one another:
+
+     1. tokens.css      every colour, size, radius, shadow and duration
+     2. base.css        reset, element defaults, focus, a11y utilities, motion
+     3. layout.css      container, app bar, console shell, grids, utilities
+     4. components.css  buttons, forms, cards, tables, modals, toasts
+     5. features.css    e-ticket, stepper, breakdowns, print
+
+   Components last so a component rule can rely on every token and layout
+   primitive already being in place. Features last of all because it contains
+   the print block, which must be able to override all of the above.
+
+   A component may only use a variable declared in tokens.css. If a value is
+   needed twice it becomes a token; if it is needed once it belongs in the
+   component rule, not in a component's inline style attribute.
+   ========================================================================== */
+
+@import './tokens.css';
+@import './base.css';
+@import './layout.css';
+@import './components.css';
+@import './features.css';

@@ -1,0 +1,13 @@
+@echo off
+title YatraRail Launcher
+cd /d "%~dp0"
+echo Starting PostgreSQL...
+net start postgresql-x64-18 >nul 2>&1
+echo Starting backend (http://localhost:8080)...
+start "YatraRail Backend" cmd /k "cd /d backend && mvn spring-boot:run"
+echo Starting frontend (http://localhost:5173)...
+start "YatraRail Frontend" cmd /k "cd /d frontend && npm run dev"
+echo Waiting for servers to start (35s)...
+ping -n 36 127.0.0.1 >nul
+start "" http://localhost:5173
+echo Done. Browser opened at http://localhost:5173

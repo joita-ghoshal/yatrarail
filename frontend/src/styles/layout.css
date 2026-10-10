@@ -1,0 +1,504 @@
+/* ==========================================================================
+   YatraRail — LAYOUT
+   The application shell and the responsive primitives every page builds on.
+
+   Breakpoints (mirrored from tokens.css):
+     sm   560px   md   860px   lg   1100px   xl   1280px
+
+   The single rule this file exists to enforce: there is no fixed-pixel layout
+   anywhere. The admin and staff sidebars used to be `grid-template-columns:
+   220px 1fr` with no media query, which meant a phone rendered them into a
+   ~155px-wide content column. Below `md` they become an overlay drawer and the
+   content takes the whole width.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Container
+   -------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-inline: var(--space-6);
+}
+
+@media (max-width: 860px) { .container { padding-inline: var(--space-5); } }
+@media (max-width: 560px) { .container { padding-inline: var(--space-4); } }
+
+/* A page's vertical rhythm. */
+.page {
+  padding-block: var(--space-7) var(--space-10);
+}
+@media (max-width: 560px) {
+  .page { padding-block: var(--space-5) var(--space-9); }
+}
+
+/* The single <main> landmark of a page. */
+.page-main { display: block; }
+.page-main:focus { outline: none; }
+
+/* --------------------------------------------------------------------------
+   Skip link + banner
+   -------------------------------------------------------------------------- */
+.skip-link { position: absolute; }        /* base.css supplies the rest */
+
+.app-bar {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+  background: var(--surface-glass);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.app-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: var(--nav-height);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-decoration: none;
+  flex: none;
+}
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: var(--fill-accent);
+  color: #fff;
+  font-size: 1.05rem;
+  flex: none;
+}
+
+/* --------------------------------------------------------------------------
+   Primary navigation
+   Desktop: a horizontal bar. Small screens: a disclosure panel below the bar,
+   because a 5-item nav plus a bell, a countdown, a name and a button cannot be
+   made to fit in 375px by shrinking anything.
+   -------------------------------------------------------------------------- */
+.nav-primary { display: flex; align-items: center; gap: var(--space-4); margin-left: auto; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li { margin: 0; }
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.nav-link:hover { background: var(--bg-soft); color: var(--text); }
+.nav-link.is-active {
+  background: var(--accent-tint);
+  color: var(--ink-accent);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: none;
+}
+
+/* The hamburger exists only below md; the desktop bar needs no toggle.
+   Scoped under .app-bar so it out-specifies .btn (components.css), which is
+   imported after this file and would otherwise win at equal specificity,
+   leaving the hamburger visible on every desktop screen. */
+.app-bar .nav-toggle { display: none; }
+
+@media (max-width: 860px) {
+  .app-bar .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+  .nav-primary {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: var(--space-4) var(--space-5) var(--space-6);
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+  }
+  /* Closed means genuinely absent: display:none takes the panel out of the
+     tab order and the accessibility tree, which aria-expanded alone does not. */
+  .nav-primary:not([data-open='true']) { display: none; }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-1);
+    margin-bottom: var(--space-4);
+  }
+  .nav-link {
+    min-height: var(--touch-target);
+    padding-inline: var(--space-4);
+    font-size: var(--fs-md);
+  }
+  .nav-actions {
+    flex-wrap: wrap;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+  }
+  .nav-actions .btn { flex: 1 1 auto; }
+}
+
+/* Below sm the brand word is dropped so the bar stays one clean row. */
+@media (max-width: 400px) {
+  .brand-text { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Console shell (admin + staff)
+   The shell owns its own width. It used to borrow `.container` (1180px), which
+   left a wide console looking pinned to the middle of a 1920px screen with dead
+   space on both sides. It now expands to --container-console and its main column
+   takes every pixel the rail does not need.
+   -------------------------------------------------------------------------- */
+.console {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  gap: var(--space-7);
+  align-items: start;
+  width: 100%;
+  max-width: var(--container-console);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-6) var(--space-10);
+}
+@media (max-width: 1100px) { .console { gap: var(--space-6); padding-inline: var(--space-5); } }
+@media (max-width: 860px) { .console { padding-inline: var(--space-5); } }
+@media (max-width: 560px) { .console { padding-inline: var(--space-4); } }
+
+.console-nav {
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-5));
+  max-height: calc(100vh - var(--nav-height) - var(--space-8));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-3);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+.console-nav-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-3);
+  padding: var(--space-1) var(--space-3) var(--space-3);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.console-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.console-links li { margin: 0; }
+.console-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 42px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.console-link svg { flex: none; opacity: 0.8; }
+.console-link:hover { background: var(--bg-soft); color: var(--text); }
+.console-link:hover svg { opacity: 1; }
+.console-link.is-active {
+  background: var(--accent-tint);
+  color: var(--ink-accent);
+  /* A left rule as well as a tint, so the current page is not identified by
+     colour alone. */
+  box-shadow: inset 3px 0 0 var(--accent-edge);
+}
+.console-link.is-active svg { opacity: 1; }
+.console-main { min-width: 0; }
+
+/* A quiet footer at the foot of the rail, back to the public site. */
+.console-nav-foot {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+}
+.console-nav-foot a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 36px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+.console-nav-foot a:hover { background: var(--bg-soft); color: var(--ink-accent); }
+
+@media (max-width: 860px) {
+  .console { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); padding-block: var(--space-4) var(--space-8); }
+
+  /* The rail becomes an overlay drawer. It is not merely hidden: it slides in
+     over the content with a scrim, so a tablet user still gets every
+     destination without a 232px column stealing the width. */
+  .console-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: var(--z-drawer);
+    width: min(var(--sidebar-width) + 24px, 82vw);
+    max-height: none;
+    padding: var(--space-5) var(--space-4);
+    background: var(--bg-elevated);
+    border: 0;
+    border-right: 1px solid var(--border);
+    border-radius: 0;
+    box-shadow: var(--shadow-drawer);
+    transform: translateX(-102%);
+    transition: transform var(--dur-slow) var(--ease-in-out);
+    visibility: hidden;
+  }
+  .console-nav.is-open { transform: translateX(0); visibility: visible; }
+  .console-nav-title { padding-inline: 0; }
+
+  .console-link { min-height: var(--touch-target); font-size: var(--fs-md); }
+}
+
+/* The button that opens the drawer. Shown only in the collapsed state.
+   Scoped under .console so it out-specifies .btn (components.css, imported
+   after this file). At equal specificity .btn's display would win, the button
+   would stay a visible grid item on desktop, and it would take the sidebar's
+   column — pushing the rail into the content column and the content onto a
+   second row. */
+.console .console-drawer-toggle { display: none; }
+@media (max-width: 860px) {
+  .console .console-drawer-toggle {
+    display: inline-flex;
+    margin-bottom: var(--space-4);
+  }
+}
+
+.console-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: calc(var(--z-drawer) - 1);
+  background: var(--overlay);
+  border: 0;
+  padding: 0;
+  animation: yr-fade-in var(--dur-base) var(--ease-out);
+}
+@keyframes yr-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* --------------------------------------------------------------------------
+   Grids
+   auto-fit rather than fixed column counts, so a grid has the same number of
+   columns it can afford instead of a hard-coded one that overflows.
+   -------------------------------------------------------------------------- */
+.grid { display: grid; gap: var(--space-5); }
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+@media (max-width: 860px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   Flex utilities
+   -------------------------------------------------------------------------- */
+.flex { display: flex; }
+.flex-col { display: flex; flex-direction: column; }
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.gap-sm { gap: var(--space-2); }
+.gap-md { gap: var(--space-4); }
+.gap-lg { gap: var(--space-6); }
+
+/* --------------------------------------------------------------------------
+   Text utilities
+   -------------------------------------------------------------------------- */
+.text-muted { color: var(--text-muted); }
+.text-orange { color: var(--ink-accent); }
+.text-green { color: var(--ink-success); }
+.text-danger { color: var(--ink-danger); }
+.text-xs { font-size: var(--fs-xs); }
+.text-center { text-align: center; }
+.strong { font-weight: 600; }
+.mb-0 { margin-bottom: 0; }
+
+.journey {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+/* --------------------------------------------------------------------------
+   Page header
+   One heading rhythm for every screen: optional icon, title, subtitle and an
+   action cluster that wraps under the title rather than colliding with it.
+   -------------------------------------------------------------------------- */
+.page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+.page-header-main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-width: 0;
+}
+.page-header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: var(--radius-md);
+  background: var(--accent-tint);
+  color: var(--ink-accent);
+  border: 1px solid color-mix(in srgb, var(--accent-edge) 22%, transparent);
+}
+.page-header-text { min-width: 0; }
+.page-header-title { margin: 0; font-size: var(--fs-3xl); }
+.page-header-subtitle {
+  margin: var(--space-1) 0 0;
+  color: var(--text-muted);
+  font-size: var(--fs-md);
+  max-width: 72ch;
+}
+.page-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+@media (max-width: 560px) {
+  .page-header { align-items: flex-start; }
+  .page-header-icon { display: none; }
+  .page-header-title { font-size: var(--fs-2xl); }
+  .page-header-actions { width: 100%; }
+  .page-header-actions .btn { flex: 1 1 auto; }
+}
+
+/* --------------------------------------------------------------------------
+   Toolbar / filter bar
+   One reusable row for every paginated list in the app, so a search box is
+   always the same size and always reachable.
+   -------------------------------------------------------------------------- */
+.toolbar,
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+.toolbar form,
+.filter-bar form { display: flex; gap: var(--space-2); flex: 1 1 280px; min-width: 0; }
+.toolbar .control,
+.filter-bar .control { flex: 0 1 auto; width: auto; min-width: 0; }
+.toolbar form .control,
+.filter-bar form .control { flex: 1 1 auto; min-width: 0; }
+.toolbar .grow { flex: 1 1 220px; }
+.toolbar .spacer { flex: 1 1 auto; }
+
+/* A label + control pair that stays on one line inside a toolbar. */
+.toolbar .field-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.toolbar .field-inline .control { width: auto; }
+
+/* --------------------------------------------------------------------------
+   Pagination
+   The shared previous/next footer for paged lists.
+   -------------------------------------------------------------------------- */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+.pagination-summary { color: var(--text-muted); font-size: var(--fs-sm); }
+.pagination-controls { display: flex; gap: var(--space-2); margin-left: auto; }
+
+/* --------------------------------------------------------------------------
+   Small screens
+   Written under the auth page, where it used to sit next to the rules for a
+   centred sign-in card, but the selector is plain `.card` -- so it has always
+   applied to every card in the app on a phone, not just the auth one. It is
+   kept here, with that made explicit, rather than dropped on the grounds that
+   the section it was filed under is gone: dropping it would silently change
+   card padding on every phone in the product.
+   -------------------------------------------------------------------------- */
+@media (max-width: 560px) {
+  .card { padding: var(--space-5); border-radius: var(--radius-md); }
+}

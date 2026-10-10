@@ -1,0 +1,27 @@
+# --- Local logs (may contain machine-specific paths and runtime details) ---
+*.log
+
+# --- Secrets / local environment (keep .env.example) ---
+.env
+.env.local
+*.env.local
+
+# --- Build output ---
+target/
+dist/
+node_modules/
+
+# --- IDE / editor ---
+.idea/
+*.iml
+.vscode/
+
+# --- OS ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Internal working documents (kept local, not published) ---
+SETUP.md
+project.md
+EXPLAIN.md

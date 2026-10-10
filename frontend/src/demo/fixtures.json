@@ -1,0 +1,3018 @@
+﻿{
+    "meta":  {
+                 "capturedAt":  "2026-10-10T21:13:25.3242983+05:30",
+                 "journeyDate":  "2026-10-11"
+             },
+    "stations":  [
+                     {
+                         "id":  2,
+                         "code":  "BCT",
+                         "name":  "Mumbai Central",
+                         "city":  "Mumbai",
+                         "state":  "Maharashtra",
+                         "active":  true
+                     },
+                     {
+                         "id":  3,
+                         "code":  "HWH",
+                         "name":  "Howrah Junction",
+                         "city":  "Kolkata",
+                         "state":  "West Bengal",
+                         "active":  true
+                     },
+                     {
+                         "id":  4,
+                         "code":  "MAS",
+                         "name":  "Chennai Central",
+                         "city":  "Chennai",
+                         "state":  "Tamil Nadu",
+                         "active":  true
+                     },
+                     {
+                         "id":  5,
+                         "code":  "SBC",
+                         "name":  "Bengaluru City",
+                         "city":  "Bengaluru",
+                         "state":  "Karnataka",
+                         "active":  true
+                     },
+                     {
+                         "id":  6,
+                         "code":  "PUNE",
+                         "name":  "Pune Junction",
+                         "city":  "Pune",
+                         "state":  "Maharashtra",
+                         "active":  true
+                     },
+                     {
+                         "id":  7,
+                         "code":  "JP",
+                         "name":  "Jaipur Junction",
+                         "city":  "Jaipur",
+                         "state":  "Rajasthan",
+                         "active":  true
+                     },
+                     {
+                         "id":  8,
+                         "code":  "ADI",
+                         "name":  "Ahmedabad Junction",
+                         "city":  "Ahmedabad",
+                         "state":  "Gujarat",
+                         "active":  true
+                     },
+                     {
+                         "id":  9,
+                         "code":  "LKO",
+                         "name":  "Lucknow Charbagh",
+                         "city":  "Lucknow",
+                         "state":  "Uttar Pradesh",
+                         "active":  true
+                     },
+                     {
+                         "id":  10,
+                         "code":  "PNBE",
+                         "name":  "Patna Junction",
+                         "city":  "Patna",
+                         "state":  "Bihar",
+                         "active":  true
+                     },
+                     {
+                         "id":  11,
+                         "code":  "BBS",
+                         "name":  "Bhubaneswar",
+                         "city":  "Bhubaneswar",
+                         "state":  "Odisha",
+                         "active":  true
+                     },
+                     {
+                         "id":  12,
+                         "code":  "NGP",
+                         "name":  "Nagpur Junction",
+                         "city":  "Nagpur",
+                         "state":  "Maharashtra",
+                         "active":  true
+                     },
+                     {
+                         "id":  1,
+                         "code":  "NDLS",
+                         "name":  "New Delhi",
+                         "city":  "New Delhi",
+                         "state":  "Delhi",
+                         "active":  true
+                     }
+                 ],
+    "search":  [
+                   {
+                       "trainId":  1,
+                       "trainNumber":  "12301",
+                       "trainName":  "Howrah Rajdhani Express",
+                       "trainType":  "RAJDHANI",
+                       "sourceStationName":  "New Delhi",
+                       "sourceStationCode":  "NDLS",
+                       "sourceStationId":  1,
+                       "destinationStationName":  "Howrah Junction",
+                       "destinationStationCode":  "HWH",
+                       "destinationStationId":  3,
+                       "distanceKm":  1450,
+                       "departureTime":  "16:55:00",
+                       "arrivalTime":  "10:05:00",
+                       "durationMinutes":  1030,
+                       "journeyDate":  "2026-10-11",
+                       "classAvailability":  [
+                                                 {
+                                                     "coachId":  1,
+                                                     "coachCode":  "A1",
+                                                     "seatClass":  "FIRST_AC",
+                                                     "seatClassLabel":  "1A",
+                                                     "fare":  6090.00,
+                                                     "distanceKm":  1450,
+                                                     "totalSeats":  18,
+                                                     "availableSeats":  18,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  2,
+                                                     "coachCode":  "B1",
+                                                     "seatClass":  "SECOND_AC",
+                                                     "seatClassLabel":  "2A",
+                                                     "fare":  4350.00,
+                                                     "distanceKm":  1450,
+                                                     "totalSeats":  48,
+                                                     "availableSeats":  48,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  3,
+                                                     "coachCode":  "B2",
+                                                     "seatClass":  "THIRD_AC",
+                                                     "seatClassLabel":  "3A",
+                                                     "fare":  2900.00,
+                                                     "distanceKm":  1450,
+                                                     "totalSeats":  64,
+                                                     "availableSeats":  64,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "trainId":  2,
+                       "trainNumber":  "12951",
+                       "trainName":  "Mumbai Rajdhani Express",
+                       "trainType":  "RAJDHANI",
+                       "sourceStationName":  "New Delhi",
+                       "sourceStationCode":  "NDLS",
+                       "sourceStationId":  1,
+                       "destinationStationName":  "Mumbai Central",
+                       "destinationStationCode":  "BCT",
+                       "destinationStationId":  2,
+                       "distanceKm":  1384,
+                       "departureTime":  "16:25:00",
+                       "arrivalTime":  "08:15:00",
+                       "durationMinutes":  950,
+                       "journeyDate":  "2026-10-11",
+                       "classAvailability":  [
+                                                 {
+                                                     "coachId":  4,
+                                                     "coachCode":  "A1",
+                                                     "seatClass":  "FIRST_AC",
+                                                     "seatClassLabel":  "1A",
+                                                     "fare":  5812.80,
+                                                     "distanceKm":  1384,
+                                                     "totalSeats":  18,
+                                                     "availableSeats":  18,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  5,
+                                                     "coachCode":  "B1",
+                                                     "seatClass":  "SECOND_AC",
+                                                     "seatClassLabel":  "2A",
+                                                     "fare":  4152.00,
+                                                     "distanceKm":  1384,
+                                                     "totalSeats":  48,
+                                                     "availableSeats":  48,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  6,
+                                                     "coachCode":  "B2",
+                                                     "seatClass":  "THIRD_AC",
+                                                     "seatClassLabel":  "3A",
+                                                     "fare":  2768.00,
+                                                     "distanceKm":  1384,
+                                                     "totalSeats":  64,
+                                                     "availableSeats":  64,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "trainId":  3,
+                       "trainNumber":  "12259",
+                       "trainName":  "Sealdah Duronto Express",
+                       "trainType":  "DURONTO",
+                       "sourceStationName":  "Howrah Junction",
+                       "sourceStationCode":  "HWH",
+                       "sourceStationId":  3,
+                       "destinationStationName":  "New Delhi",
+                       "destinationStationCode":  "NDLS",
+                       "destinationStationId":  1,
+                       "distanceKm":  1450,
+                       "departureTime":  "08:25:00",
+                       "arrivalTime":  "23:55:00",
+                       "durationMinutes":  930,
+                       "journeyDate":  "2026-10-11",
+                       "classAvailability":  [
+                                                 {
+                                                     "coachId":  7,
+                                                     "coachCode":  "A1",
+                                                     "seatClass":  "FIRST_AC",
+                                                     "seatClassLabel":  "1A",
+                                                     "fare":  6090.00,
+                                                     "distanceKm":  1450,
+                                                     "totalSeats":  18,
+                                                     "availableSeats":  18,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  8,
+                                                     "coachCode":  "B1",
+                                                     "seatClass":  "SECOND_AC",
+                                                     "seatClassLabel":  "2A",
+                                                     "fare":  4350.00,
+                                                     "distanceKm":  1450,
+                                                     "totalSeats":  48,
+                                                     "availableSeats":  48,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  9,
+                                                     "coachCode":  "B2",
+                                                     "seatClass":  "THIRD_AC",
+                                                     "seatClassLabel":  "3A",
+                                                     "fare":  2900.00,
+                                                     "distanceKm":  1450,
+                                                     "totalSeats":  64,
+                                                     "availableSeats":  64,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  10,
+                                                     "coachCode":  "S1",
+                                                     "seatClass":  "SLEEPER",
+                                                     "seatClassLabel":  "SL",
+                                                     "fare":  1160.00,
+                                                     "distanceKm":  1450,
+                                                     "totalSeats":  72,
+                                                     "availableSeats":  72,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "trainId":  4,
+                       "trainNumber":  "12621",
+                       "trainName":  "Tamil Nadu Express",
+                       "trainType":  "SUPERFAST",
+                       "sourceStationName":  "New Delhi",
+                       "sourceStationCode":  "NDLS",
+                       "sourceStationId":  1,
+                       "destinationStationName":  "Chennai Central",
+                       "destinationStationCode":  "MAS",
+                       "destinationStationId":  4,
+                       "distanceKm":  2180,
+                       "departureTime":  "22:30:00",
+                       "arrivalTime":  "07:15:00",
+                       "durationMinutes":  1965,
+                       "journeyDate":  "2026-10-11",
+                       "classAvailability":  [
+                                                 {
+                                                     "coachId":  11,
+                                                     "coachCode":  "A1",
+                                                     "seatClass":  "FIRST_AC",
+                                                     "seatClassLabel":  "1A",
+                                                     "fare":  9156.00,
+                                                     "distanceKm":  2180,
+                                                     "totalSeats":  18,
+                                                     "availableSeats":  18,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  12,
+                                                     "coachCode":  "B1",
+                                                     "seatClass":  "SECOND_AC",
+                                                     "seatClassLabel":  "2A",
+                                                     "fare":  6540.00,
+                                                     "distanceKm":  2180,
+                                                     "totalSeats":  48,
+                                                     "availableSeats":  48,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  13,
+                                                     "coachCode":  "B2",
+                                                     "seatClass":  "THIRD_AC",
+                                                     "seatClassLabel":  "3A",
+                                                     "fare":  4360.00,
+                                                     "distanceKm":  2180,
+                                                     "totalSeats":  64,
+                                                     "availableSeats":  64,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  14,
+                                                     "coachCode":  "S1",
+                                                     "seatClass":  "SLEEPER",
+                                                     "seatClassLabel":  "SL",
+                                                     "fare":  1744.00,
+                                                     "distanceKm":  2180,
+                                                     "totalSeats":  72,
+                                                     "availableSeats":  72,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "trainId":  6,
+                       "trainNumber":  "12138",
+                       "trainName":  "Punjab Mail",
+                       "trainType":  "EXPRESS",
+                       "sourceStationName":  "Pune Junction",
+                       "sourceStationCode":  "PUNE",
+                       "sourceStationId":  6,
+                       "destinationStationName":  "Jaipur Junction",
+                       "destinationStationCode":  "JP",
+                       "destinationStationId":  7,
+                       "distanceKm":  1120,
+                       "departureTime":  "21:10:00",
+                       "arrivalTime":  "14:40:00",
+                       "durationMinutes":  1050,
+                       "journeyDate":  "2026-10-11",
+                       "classAvailability":  [
+                                                 {
+                                                     "coachId":  19,
+                                                     "coachCode":  "A1",
+                                                     "seatClass":  "FIRST_AC",
+                                                     "seatClassLabel":  "1A",
+                                                     "fare":  4704.00,
+                                                     "distanceKm":  1120,
+                                                     "totalSeats":  18,
+                                                     "availableSeats":  18,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  20,
+                                                     "coachCode":  "B1",
+                                                     "seatClass":  "SECOND_AC",
+                                                     "seatClassLabel":  "2A",
+                                                     "fare":  3360.00,
+                                                     "distanceKm":  1120,
+                                                     "totalSeats":  48,
+                                                     "availableSeats":  48,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  21,
+                                                     "coachCode":  "B2",
+                                                     "seatClass":  "THIRD_AC",
+                                                     "seatClassLabel":  "3A",
+                                                     "fare":  2240.00,
+                                                     "distanceKm":  1120,
+                                                     "totalSeats":  64,
+                                                     "availableSeats":  64,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  22,
+                                                     "coachCode":  "S1",
+                                                     "seatClass":  "SLEEPER",
+                                                     "seatClassLabel":  "SL",
+                                                     "fare":  896.00,
+                                                     "distanceKm":  1120,
+                                                     "totalSeats":  72,
+                                                     "availableSeats":  72,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "trainId":  7,
+                       "trainNumber":  "18409",
+                       "trainName":  "Bhubaneswar Passenger",
+                       "trainType":  "PASSENGER",
+                       "sourceStationName":  "Bhubaneswar",
+                       "sourceStationCode":  "BBS",
+                       "sourceStationId":  11,
+                       "destinationStationName":  "Howrah Junction",
+                       "destinationStationCode":  "HWH",
+                       "destinationStationId":  3,
+                       "distanceKm":  440,
+                       "departureTime":  "06:45:00",
+                       "arrivalTime":  "13:20:00",
+                       "durationMinutes":  395,
+                       "journeyDate":  "2026-10-11",
+                       "classAvailability":  [
+                                                 {
+                                                     "coachId":  23,
+                                                     "coachCode":  "A1",
+                                                     "seatClass":  "FIRST_AC",
+                                                     "seatClassLabel":  "1A",
+                                                     "fare":  2500.00,
+                                                     "distanceKm":  440,
+                                                     "totalSeats":  18,
+                                                     "availableSeats":  18,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  24,
+                                                     "coachCode":  "B1",
+                                                     "seatClass":  "SECOND_AC",
+                                                     "seatClassLabel":  "2A",
+                                                     "fare":  1500.00,
+                                                     "distanceKm":  440,
+                                                     "totalSeats":  48,
+                                                     "availableSeats":  48,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  25,
+                                                     "coachCode":  "B2",
+                                                     "seatClass":  "THIRD_AC",
+                                                     "seatClassLabel":  "3A",
+                                                     "fare":  950.00,
+                                                     "distanceKm":  440,
+                                                     "totalSeats":  64,
+                                                     "availableSeats":  64,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 },
+                                                 {
+                                                     "coachId":  26,
+                                                     "coachCode":  "S1",
+                                                     "seatClass":  "SLEEPER",
+                                                     "seatClassLabel":  "SL",
+                                                     "fare":  400.00,
+                                                     "distanceKm":  440,
+                                                     "totalSeats":  72,
+                                                     "availableSeats":  72,
+                                                     "racSeats":  2,
+                                                     "status":  "AVAILABLE"
+                                                 }
+                                             ]
+                   }
+               ],
+    "details":  {
+                    "7":  {
+                              "trainId":  7,
+                              "trainNumber":  "18409",
+                              "trainName":  "Bhubaneswar Passenger",
+                              "trainType":  "PASSENGER",
+                              "departureTime":  "06:45:00",
+                              "arrivalTime":  "13:20:00",
+                              "durationMinutes":  395,
+                              "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                              "runsOnDays":  [
+                                                 "MON",
+                                                 "TUE",
+                                                 "WED",
+                                                 "THU",
+                                                 "FRI",
+                                                 "SAT",
+                                                 "SUN"
+                                             ],
+                              "distanceKm":  440,
+                              "route":  [
+                                            {
+                                                "sequenceNumber":  1,
+                                                "stationId":  11,
+                                                "stationCode":  "BBS",
+                                                "stationName":  "Bhubaneswar",
+                                                "arrivalTime":  null,
+                                                "departureTime":  "06:45:00",
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  0
+                                            },
+                                            {
+                                                "sequenceNumber":  2,
+                                                "stationId":  3,
+                                                "stationCode":  "HWH",
+                                                "stationName":  "Howrah Junction",
+                                                "arrivalTime":  "12:51:00",
+                                                "departureTime":  null,
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  440
+                                            }
+                                        ],
+                              "classes":  [
+                                              {
+                                                  "coachId":  23,
+                                                  "coachCode":  "A1",
+                                                  "seatClass":  "FIRST_AC",
+                                                  "seatClassLabel":  "1A",
+                                                  "fare":  2500.00,
+                                                  "distanceKm":  440,
+                                                  "totalSeats":  18,
+                                                  "availableSeats":  18,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  24,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "fare":  1500.00,
+                                                  "distanceKm":  440,
+                                                  "totalSeats":  48,
+                                                  "availableSeats":  48,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  25,
+                                                  "coachCode":  "B2",
+                                                  "seatClass":  "THIRD_AC",
+                                                  "seatClassLabel":  "3A",
+                                                  "fare":  950.00,
+                                                  "distanceKm":  440,
+                                                  "totalSeats":  64,
+                                                  "availableSeats":  64,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  26,
+                                                  "coachCode":  "S1",
+                                                  "seatClass":  "SLEEPER",
+                                                  "seatClassLabel":  "SL",
+                                                  "fare":  400.00,
+                                                  "distanceKm":  440,
+                                                  "totalSeats":  72,
+                                                  "availableSeats":  72,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              }
+                                          ]
+                          },
+                    "3":  {
+                              "trainId":  3,
+                              "trainNumber":  "12259",
+                              "trainName":  "Sealdah Duronto Express",
+                              "trainType":  "DURONTO",
+                              "departureTime":  "08:25:00",
+                              "arrivalTime":  "23:55:00",
+                              "durationMinutes":  930,
+                              "runsOn":  "MON,WED,FRI,SUN",
+                              "runsOnDays":  [
+                                                 "MON",
+                                                 "WED",
+                                                 "FRI",
+                                                 "SUN"
+                                             ],
+                              "distanceKm":  1450,
+                              "route":  [
+                                            {
+                                                "sequenceNumber":  1,
+                                                "stationId":  3,
+                                                "stationCode":  "HWH",
+                                                "stationName":  "Howrah Junction",
+                                                "arrivalTime":  null,
+                                                "departureTime":  "08:25:00",
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  0
+                                            },
+                                            {
+                                                "sequenceNumber":  2,
+                                                "stationId":  1,
+                                                "stationCode":  "NDLS",
+                                                "stationName":  "New Delhi",
+                                                "arrivalTime":  "04:33:00",
+                                                "departureTime":  null,
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  1450
+                                            }
+                                        ],
+                              "classes":  [
+                                              {
+                                                  "coachId":  7,
+                                                  "coachCode":  "A1",
+                                                  "seatClass":  "FIRST_AC",
+                                                  "seatClassLabel":  "1A",
+                                                  "fare":  6090.00,
+                                                  "distanceKm":  1450,
+                                                  "totalSeats":  18,
+                                                  "availableSeats":  18,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  8,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "fare":  4350.00,
+                                                  "distanceKm":  1450,
+                                                  "totalSeats":  48,
+                                                  "availableSeats":  48,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  9,
+                                                  "coachCode":  "B2",
+                                                  "seatClass":  "THIRD_AC",
+                                                  "seatClassLabel":  "3A",
+                                                  "fare":  2900.00,
+                                                  "distanceKm":  1450,
+                                                  "totalSeats":  64,
+                                                  "availableSeats":  64,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  10,
+                                                  "coachCode":  "S1",
+                                                  "seatClass":  "SLEEPER",
+                                                  "seatClassLabel":  "SL",
+                                                  "fare":  1160.00,
+                                                  "distanceKm":  1450,
+                                                  "totalSeats":  72,
+                                                  "availableSeats":  72,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              }
+                                          ]
+                          },
+                    "2":  {
+                              "trainId":  2,
+                              "trainNumber":  "12951",
+                              "trainName":  "Mumbai Rajdhani Express",
+                              "trainType":  "RAJDHANI",
+                              "departureTime":  "16:25:00",
+                              "arrivalTime":  "08:15:00",
+                              "durationMinutes":  950,
+                              "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                              "runsOnDays":  [
+                                                 "MON",
+                                                 "TUE",
+                                                 "WED",
+                                                 "THU",
+                                                 "FRI",
+                                                 "SAT",
+                                                 "SUN"
+                                             ],
+                              "distanceKm":  1384,
+                              "route":  [
+                                            {
+                                                "sequenceNumber":  1,
+                                                "stationId":  1,
+                                                "stationCode":  "NDLS",
+                                                "stationName":  "New Delhi",
+                                                "arrivalTime":  null,
+                                                "departureTime":  "16:25:00",
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  0
+                                            },
+                                            {
+                                                "sequenceNumber":  2,
+                                                "stationId":  8,
+                                                "stationCode":  "ADI",
+                                                "stationName":  "Ahmedabad Junction",
+                                                "arrivalTime":  "01:01:00",
+                                                "departureTime":  "01:06:00",
+                                                "haltMinutes":  5,
+                                                "distanceFromSourceKm":  620
+                                            },
+                                            {
+                                                "sequenceNumber":  3,
+                                                "stationId":  2,
+                                                "stationCode":  "BCT",
+                                                "stationName":  "Mumbai Central",
+                                                "arrivalTime":  "11:38:00",
+                                                "departureTime":  null,
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  1384
+                                            }
+                                        ],
+                              "classes":  [
+                                              {
+                                                  "coachId":  4,
+                                                  "coachCode":  "A1",
+                                                  "seatClass":  "FIRST_AC",
+                                                  "seatClassLabel":  "1A",
+                                                  "fare":  5812.80,
+                                                  "distanceKm":  1384,
+                                                  "totalSeats":  18,
+                                                  "availableSeats":  18,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  5,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "fare":  4152.00,
+                                                  "distanceKm":  1384,
+                                                  "totalSeats":  48,
+                                                  "availableSeats":  48,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  6,
+                                                  "coachCode":  "B2",
+                                                  "seatClass":  "THIRD_AC",
+                                                  "seatClassLabel":  "3A",
+                                                  "fare":  2768.00,
+                                                  "distanceKm":  1384,
+                                                  "totalSeats":  64,
+                                                  "availableSeats":  64,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              }
+                                          ]
+                          },
+                    "1":  {
+                              "trainId":  1,
+                              "trainNumber":  "12301",
+                              "trainName":  "Howrah Rajdhani Express",
+                              "trainType":  "RAJDHANI",
+                              "departureTime":  "16:55:00",
+                              "arrivalTime":  "10:05:00",
+                              "durationMinutes":  1030,
+                              "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                              "runsOnDays":  [
+                                                 "MON",
+                                                 "TUE",
+                                                 "WED",
+                                                 "THU",
+                                                 "FRI",
+                                                 "SAT",
+                                                 "SUN"
+                                             ],
+                              "distanceKm":  1450,
+                              "route":  [
+                                            {
+                                                "sequenceNumber":  1,
+                                                "stationId":  1,
+                                                "stationCode":  "NDLS",
+                                                "stationName":  "New Delhi",
+                                                "arrivalTime":  null,
+                                                "departureTime":  "16:55:00",
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  0
+                                            },
+                                            {
+                                                "sequenceNumber":  2,
+                                                "stationId":  9,
+                                                "stationCode":  "LKO",
+                                                "stationName":  "Lucknow Charbagh",
+                                                "arrivalTime":  "23:05:00",
+                                                "departureTime":  "23:10:00",
+                                                "haltMinutes":  5,
+                                                "distanceFromSourceKm":  445
+                                            },
+                                            {
+                                                "sequenceNumber":  3,
+                                                "stationId":  10,
+                                                "stationCode":  "PNBE",
+                                                "stationName":  "Patna Junction",
+                                                "arrivalTime":  "05:25:00",
+                                                "departureTime":  "05:30:00",
+                                                "haltMinutes":  5,
+                                                "distanceFromSourceKm":  900
+                                            },
+                                            {
+                                                "sequenceNumber":  4,
+                                                "stationId":  3,
+                                                "stationCode":  "HWH",
+                                                "stationName":  "Howrah Junction",
+                                                "arrivalTime":  "13:03:00",
+                                                "departureTime":  null,
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  1450
+                                            }
+                                        ],
+                              "classes":  [
+                                              {
+                                                  "coachId":  1,
+                                                  "coachCode":  "A1",
+                                                  "seatClass":  "FIRST_AC",
+                                                  "seatClassLabel":  "1A",
+                                                  "fare":  6090.00,
+                                                  "distanceKm":  1450,
+                                                  "totalSeats":  18,
+                                                  "availableSeats":  18,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  2,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "fare":  4350.00,
+                                                  "distanceKm":  1450,
+                                                  "totalSeats":  48,
+                                                  "availableSeats":  48,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  3,
+                                                  "coachCode":  "B2",
+                                                  "seatClass":  "THIRD_AC",
+                                                  "seatClassLabel":  "3A",
+                                                  "fare":  2900.00,
+                                                  "distanceKm":  1450,
+                                                  "totalSeats":  64,
+                                                  "availableSeats":  64,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              }
+                                          ]
+                          },
+                    "4":  {
+                              "trainId":  4,
+                              "trainNumber":  "12621",
+                              "trainName":  "Tamil Nadu Express",
+                              "trainType":  "SUPERFAST",
+                              "departureTime":  "22:30:00",
+                              "arrivalTime":  "07:15:00",
+                              "durationMinutes":  1965,
+                              "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                              "runsOnDays":  [
+                                                 "MON",
+                                                 "TUE",
+                                                 "WED",
+                                                 "THU",
+                                                 "FRI",
+                                                 "SAT",
+                                                 "SUN"
+                                             ],
+                              "distanceKm":  2180,
+                              "route":  [
+                                            {
+                                                "sequenceNumber":  1,
+                                                "stationId":  1,
+                                                "stationCode":  "NDLS",
+                                                "stationName":  "New Delhi",
+                                                "arrivalTime":  null,
+                                                "departureTime":  "22:30:00",
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  0
+                                            },
+                                            {
+                                                "sequenceNumber":  2,
+                                                "stationId":  12,
+                                                "stationCode":  "NGP",
+                                                "stationName":  "Nagpur Junction",
+                                                "arrivalTime":  "13:05:00",
+                                                "departureTime":  "13:10:00",
+                                                "haltMinutes":  5,
+                                                "distanceFromSourceKm":  1050
+                                            },
+                                            {
+                                                "sequenceNumber":  3,
+                                                "stationId":  4,
+                                                "stationCode":  "MAS",
+                                                "stationName":  "Chennai Central",
+                                                "arrivalTime":  "04:46:00",
+                                                "departureTime":  null,
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  2180
+                                            }
+                                        ],
+                              "classes":  [
+                                              {
+                                                  "coachId":  11,
+                                                  "coachCode":  "A1",
+                                                  "seatClass":  "FIRST_AC",
+                                                  "seatClassLabel":  "1A",
+                                                  "fare":  9156.00,
+                                                  "distanceKm":  2180,
+                                                  "totalSeats":  18,
+                                                  "availableSeats":  18,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  12,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "fare":  6540.00,
+                                                  "distanceKm":  2180,
+                                                  "totalSeats":  48,
+                                                  "availableSeats":  48,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  13,
+                                                  "coachCode":  "B2",
+                                                  "seatClass":  "THIRD_AC",
+                                                  "seatClassLabel":  "3A",
+                                                  "fare":  4360.00,
+                                                  "distanceKm":  2180,
+                                                  "totalSeats":  64,
+                                                  "availableSeats":  64,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  14,
+                                                  "coachCode":  "S1",
+                                                  "seatClass":  "SLEEPER",
+                                                  "seatClassLabel":  "SL",
+                                                  "fare":  1744.00,
+                                                  "distanceKm":  2180,
+                                                  "totalSeats":  72,
+                                                  "availableSeats":  72,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              }
+                                          ]
+                          },
+                    "6":  {
+                              "trainId":  6,
+                              "trainNumber":  "12138",
+                              "trainName":  "Punjab Mail",
+                              "trainType":  "EXPRESS",
+                              "departureTime":  "21:10:00",
+                              "arrivalTime":  "14:40:00",
+                              "durationMinutes":  1050,
+                              "runsOn":  "TUE,THU,SAT,SUN",
+                              "runsOnDays":  [
+                                                 "TUE",
+                                                 "THU",
+                                                 "SAT",
+                                                 "SUN"
+                                             ],
+                              "distanceKm":  1120,
+                              "route":  [
+                                            {
+                                                "sequenceNumber":  1,
+                                                "stationId":  6,
+                                                "stationCode":  "PUNE",
+                                                "stationName":  "Pune Junction",
+                                                "arrivalTime":  null,
+                                                "departureTime":  "21:10:00",
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  0
+                                            },
+                                            {
+                                                "sequenceNumber":  2,
+                                                "stationId":  8,
+                                                "stationCode":  "ADI",
+                                                "stationName":  "Ahmedabad Junction",
+                                                "arrivalTime":  "08:00:00",
+                                                "departureTime":  "08:05:00",
+                                                "haltMinutes":  5,
+                                                "distanceFromSourceKm":  780
+                                            },
+                                            {
+                                                "sequenceNumber":  3,
+                                                "stationId":  7,
+                                                "stationCode":  "JP",
+                                                "stationName":  "Jaipur Junction",
+                                                "arrivalTime":  "12:43:00",
+                                                "departureTime":  null,
+                                                "haltMinutes":  0,
+                                                "distanceFromSourceKm":  1120
+                                            }
+                                        ],
+                              "classes":  [
+                                              {
+                                                  "coachId":  19,
+                                                  "coachCode":  "A1",
+                                                  "seatClass":  "FIRST_AC",
+                                                  "seatClassLabel":  "1A",
+                                                  "fare":  4704.00,
+                                                  "distanceKm":  1120,
+                                                  "totalSeats":  18,
+                                                  "availableSeats":  18,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  20,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "fare":  3360.00,
+                                                  "distanceKm":  1120,
+                                                  "totalSeats":  48,
+                                                  "availableSeats":  48,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  21,
+                                                  "coachCode":  "B2",
+                                                  "seatClass":  "THIRD_AC",
+                                                  "seatClassLabel":  "3A",
+                                                  "fare":  2240.00,
+                                                  "distanceKm":  1120,
+                                                  "totalSeats":  64,
+                                                  "availableSeats":  64,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              },
+                                              {
+                                                  "coachId":  22,
+                                                  "coachCode":  "S1",
+                                                  "seatClass":  "SLEEPER",
+                                                  "seatClassLabel":  "SL",
+                                                  "fare":  896.00,
+                                                  "distanceKm":  1120,
+                                                  "totalSeats":  72,
+                                                  "availableSeats":  72,
+                                                  "racSeats":  2,
+                                                  "status":  "AVAILABLE"
+                                              }
+                                          ]
+                          }
+                },
+    "me_pax":  {
+                   "id":  3,
+                   "fullName":  "Demo Passenger",
+                   "email":  "passenger@yatrarail.demo",
+                   "phone":  "9000000003",
+                   "gender":  "Female",
+                   "age":  29,
+                   "role":  "PASSENGER",
+                   "active":  true,
+                   "temporaryAccount":  false,
+                   "sessionExpiresAt":  null,
+                   "createdAt":  "2026-09-18T09:35:27.718173"
+               },
+    "me_admin":  {
+                     "id":  1,
+                     "fullName":  "Admin User",
+                     "email":  "admin@yatrarail.demo",
+                     "phone":  "9000000001",
+                     "gender":  null,
+                     "age":  null,
+                     "role":  "ADMIN",
+                     "active":  true,
+                     "temporaryAccount":  false,
+                     "sessionExpiresAt":  null,
+                     "createdAt":  "2026-09-18T09:35:27.556671"
+                 },
+    "me_staff":  {
+                     "id":  2,
+                     "fullName":  "Staff User",
+                     "email":  "staff@yatrarail.demo",
+                     "phone":  "9000000002",
+                     "gender":  null,
+                     "age":  null,
+                     "role":  "STAFF",
+                     "active":  true,
+                     "temporaryAccount":  false,
+                     "sessionExpiresAt":  null,
+                     "createdAt":  "2026-09-18T09:35:27.638043"
+                 },
+    "notifications":  [
+                          {
+                              "id":  82,
+                              "type":  "SYSTEM_ANNOUNCEMENT",
+                              "typeLabel":  "Announcement",
+                              "category":  "System announcements",
+                              "title":  "Reach check",
+                              "message":  "second notice",
+                              "isRead":  false,
+                              "createdAt":  "2026-10-03T22:15:39.579981",
+                              "announcement":  true
+                          },
+                          {
+                              "id":  81,
+                              "type":  "SYSTEM_ANNOUNCEMENT",
+                              "typeLabel":  "Announcement",
+                              "category":  "System announcements",
+                              "title":  "Phase 9 platform notice",
+                              "message":  "Announcement delivery is now tracked per person.",
+                              "isRead":  true,
+                              "createdAt":  "2026-10-03T22:15:39.317261",
+                              "announcement":  true
+                          }
+                      ],
+    "unread_count":  {
+                         "count":  1
+                     },
+    "notif_prefs":  {
+                        "announcementsEnabled":  true,
+                        "waitlistAlerts":  "ALL",
+                        "waitlistOptions":  [
+                                                {
+                                                    "value":  "ALL",
+                                                    "label":  "Every movement"
+                                                },
+                                                {
+                                                    "value":  "PROMOTED_ONLY",
+                                                    "label":  "Position changes only"
+                                                },
+                                                {
+                                                    "value":  "OFF",
+                                                    "label":  "Only the outcome"
+                                                }
+                                            ],
+                        "mutedUntil":  null,
+                        "muted":  false,
+                        "alwaysDelivered":  [
+                                                {
+                                                    "category":  "Booking updates",
+                                                    "reason":  "This is the record of something you did. It is always delivered, so you never find out about it late."
+                                                },
+                                                {
+                                                    "category":  "Payment updates",
+                                                    "reason":  "This is the record of something you did. It is always delivered, so you never find out about it late."
+                                                },
+                                                {
+                                                    "category":  "Cancellation updates",
+                                                    "reason":  "This is the record of something you did. It is always delivered, so you never find out about it late."
+                                                },
+                                                {
+                                                    "category":  "Waitlist updates",
+                                                    "reason":  "This is the record of something you did. It is always delivered, so you never find out about it late."
+                                                },
+                                                {
+                                                    "category":  "Staff alerts",
+                                                    "reason":  "This is the record of something you did. It is always delivered, so you never find out about it late."
+                                                }
+                                            ]
+                    },
+    "refunds_pax":  [
+
+                    ],
+    "admin_dashboard":  {
+                            "totalUsers":  4,
+                            "totalTrains":  6,
+                            "totalStations":  12,
+                            "totalBookings":  0,
+                            "confirmedBookings":  0,
+                            "cancelledBookings":  0,
+                            "waitlistedBookings":  0,
+                            "racBookings":  0,
+                            "expiredBookings":  0,
+                            "activeTrains":  6,
+                            "totalDemoRevenue":  0,
+                            "bookingsByClass":  {
+
+                                                },
+                            "monthlyBookings":  [
+
+                                                ],
+                            "popularRoutes":  [
+
+                                              ]
+                        },
+    "admin_users":  {
+                        "content":  [
+                                        {
+                                            "id":  1,
+                                            "fullName":  "Admin User",
+                                            "email":  "admin@yatrarail.demo",
+                                            "phone":  "9000000001",
+                                            "role":  "ADMIN",
+                                            "active":  true,
+                                            "temporaryAccount":  false,
+                                            "gender":  null,
+                                            "age":  null,
+                                            "bookingCount":  0,
+                                            "createdAt":  "2026-09-18T09:35:27.556671",
+                                            "updatedAt":  "2026-09-18T10:31:44.520012"
+                                        },
+                                        {
+                                            "id":  2,
+                                            "fullName":  "Staff User",
+                                            "email":  "staff@yatrarail.demo",
+                                            "phone":  "9000000002",
+                                            "role":  "STAFF",
+                                            "active":  true,
+                                            "temporaryAccount":  false,
+                                            "gender":  null,
+                                            "age":  null,
+                                            "bookingCount":  0,
+                                            "createdAt":  "2026-09-18T09:35:27.638043",
+                                            "updatedAt":  "2026-09-18T09:35:27.638043"
+                                        },
+                                        {
+                                            "id":  3,
+                                            "fullName":  "Demo Passenger",
+                                            "email":  "passenger@yatrarail.demo",
+                                            "phone":  "9000000003",
+                                            "role":  "PASSENGER",
+                                            "active":  true,
+                                            "temporaryAccount":  false,
+                                            "gender":  "Female",
+                                            "age":  29,
+                                            "bookingCount":  0,
+                                            "createdAt":  "2026-09-18T09:35:27.718173",
+                                            "updatedAt":  "2026-10-10T14:10:02.022363"
+                                        },
+                                        {
+                                            "id":  33,
+                                            "fullName":  "Joita Ghoshal",
+                                            "email":  "temp-224245b5-4d43-47b6-93ff-1edf8b6482b5@guest.yatrarail.invalid",
+                                            "phone":  "1234567890",
+                                            "role":  "TEMP_PASSENGER",
+                                            "active":  false,
+                                            "temporaryAccount":  true,
+                                            "gender":  null,
+                                            "age":  null,
+                                            "bookingCount":  0,
+                                            "createdAt":  "2026-10-10T13:08:57.406406",
+                                            "updatedAt":  "2026-10-10T15:28:47.013866"
+                                        }
+                                    ],
+                        "page":  0,
+                        "size":  20,
+                        "totalElements":  4,
+                        "totalPages":  1,
+                        "first":  true,
+                        "last":  true
+                    },
+    "admin_stations":  [
+                           {
+                               "id":  2,
+                               "code":  "BCT",
+                               "name":  "Mumbai Central",
+                               "city":  "Mumbai",
+                               "state":  "Maharashtra",
+                               "active":  true
+                           },
+                           {
+                               "id":  3,
+                               "code":  "HWH",
+                               "name":  "Howrah Junction",
+                               "city":  "Kolkata",
+                               "state":  "West Bengal",
+                               "active":  true
+                           },
+                           {
+                               "id":  4,
+                               "code":  "MAS",
+                               "name":  "Chennai Central",
+                               "city":  "Chennai",
+                               "state":  "Tamil Nadu",
+                               "active":  true
+                           },
+                           {
+                               "id":  5,
+                               "code":  "SBC",
+                               "name":  "Bengaluru City",
+                               "city":  "Bengaluru",
+                               "state":  "Karnataka",
+                               "active":  true
+                           },
+                           {
+                               "id":  6,
+                               "code":  "PUNE",
+                               "name":  "Pune Junction",
+                               "city":  "Pune",
+                               "state":  "Maharashtra",
+                               "active":  true
+                           },
+                           {
+                               "id":  7,
+                               "code":  "JP",
+                               "name":  "Jaipur Junction",
+                               "city":  "Jaipur",
+                               "state":  "Rajasthan",
+                               "active":  true
+                           },
+                           {
+                               "id":  8,
+                               "code":  "ADI",
+                               "name":  "Ahmedabad Junction",
+                               "city":  "Ahmedabad",
+                               "state":  "Gujarat",
+                               "active":  true
+                           },
+                           {
+                               "id":  9,
+                               "code":  "LKO",
+                               "name":  "Lucknow Charbagh",
+                               "city":  "Lucknow",
+                               "state":  "Uttar Pradesh",
+                               "active":  true
+                           },
+                           {
+                               "id":  10,
+                               "code":  "PNBE",
+                               "name":  "Patna Junction",
+                               "city":  "Patna",
+                               "state":  "Bihar",
+                               "active":  true
+                           },
+                           {
+                               "id":  11,
+                               "code":  "BBS",
+                               "name":  "Bhubaneswar",
+                               "city":  "Bhubaneswar",
+                               "state":  "Odisha",
+                               "active":  true
+                           },
+                           {
+                               "id":  12,
+                               "code":  "NGP",
+                               "name":  "Nagpur Junction",
+                               "city":  "Nagpur",
+                               "state":  "Maharashtra",
+                               "active":  true
+                           },
+                           {
+                               "id":  1,
+                               "code":  "NDLS",
+                               "name":  "New Delhi",
+                               "city":  "New Delhi",
+                               "state":  "Delhi",
+                               "active":  true
+                           }
+                       ],
+    "admin_trains":  [
+                         {
+                             "id":  1,
+                             "trainNumber":  "12301",
+                             "name":  "Howrah Rajdhani Express",
+                             "type":  "RAJDHANI",
+                             "sourceStationId":  1,
+                             "sourceStationCode":  "NDLS",
+                             "sourceStationName":  "New Delhi",
+                             "destinationStationId":  3,
+                             "destinationStationCode":  "HWH",
+                             "destinationStationName":  "Howrah Junction",
+                             "departureTime":  "16:55:00",
+                             "arrivalTime":  "10:05:00",
+                             "durationMinutes":  1030,
+                             "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                             "active":  true
+                         },
+                         {
+                             "id":  2,
+                             "trainNumber":  "12951",
+                             "name":  "Mumbai Rajdhani Express",
+                             "type":  "RAJDHANI",
+                             "sourceStationId":  1,
+                             "sourceStationCode":  "NDLS",
+                             "sourceStationName":  "New Delhi",
+                             "destinationStationId":  2,
+                             "destinationStationCode":  "BCT",
+                             "destinationStationName":  "Mumbai Central",
+                             "departureTime":  "16:25:00",
+                             "arrivalTime":  "08:15:00",
+                             "durationMinutes":  950,
+                             "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                             "active":  true
+                         },
+                         {
+                             "id":  3,
+                             "trainNumber":  "12259",
+                             "name":  "Sealdah Duronto Express",
+                             "type":  "DURONTO",
+                             "sourceStationId":  3,
+                             "sourceStationCode":  "HWH",
+                             "sourceStationName":  "Howrah Junction",
+                             "destinationStationId":  1,
+                             "destinationStationCode":  "NDLS",
+                             "destinationStationName":  "New Delhi",
+                             "departureTime":  "08:25:00",
+                             "arrivalTime":  "23:55:00",
+                             "durationMinutes":  930,
+                             "runsOn":  "MON,WED,FRI,SUN",
+                             "active":  true
+                         },
+                         {
+                             "id":  4,
+                             "trainNumber":  "12621",
+                             "name":  "Tamil Nadu Express",
+                             "type":  "SUPERFAST",
+                             "sourceStationId":  1,
+                             "sourceStationCode":  "NDLS",
+                             "sourceStationName":  "New Delhi",
+                             "destinationStationId":  4,
+                             "destinationStationCode":  "MAS",
+                             "destinationStationName":  "Chennai Central",
+                             "departureTime":  "22:30:00",
+                             "arrivalTime":  "07:15:00",
+                             "durationMinutes":  1965,
+                             "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                             "active":  true
+                         },
+                         {
+                             "id":  6,
+                             "trainNumber":  "12138",
+                             "name":  "Punjab Mail",
+                             "type":  "EXPRESS",
+                             "sourceStationId":  6,
+                             "sourceStationCode":  "PUNE",
+                             "sourceStationName":  "Pune Junction",
+                             "destinationStationId":  7,
+                             "destinationStationCode":  "JP",
+                             "destinationStationName":  "Jaipur Junction",
+                             "departureTime":  "21:10:00",
+                             "arrivalTime":  "14:40:00",
+                             "durationMinutes":  1050,
+                             "runsOn":  "TUE,THU,SAT,SUN",
+                             "active":  true
+                         },
+                         {
+                             "id":  7,
+                             "trainNumber":  "18409",
+                             "name":  "Bhubaneswar Passenger",
+                             "type":  "PASSENGER",
+                             "sourceStationId":  11,
+                             "sourceStationCode":  "BBS",
+                             "sourceStationName":  "Bhubaneswar",
+                             "destinationStationId":  3,
+                             "destinationStationCode":  "HWH",
+                             "destinationStationName":  "Howrah Junction",
+                             "departureTime":  "06:45:00",
+                             "arrivalTime":  "13:20:00",
+                             "durationMinutes":  395,
+                             "runsOn":  "MON,TUE,WED,THU,FRI,SAT,SUN",
+                             "active":  true
+                         }
+                     ],
+    "admin_fares":  [
+                        {
+                            "id":  5,
+                            "seatClass":  "CHAIR_CAR",
+                            "seatClassLabel":  "CC",
+                            "farePerKm":  1.50,
+                            "minimumFare":  300.00,
+                            "platformFee":  30.00,
+                            "gstPercent":  5.00
+                        },
+                        {
+                            "id":  1,
+                            "seatClass":  "FIRST_AC",
+                            "seatClassLabel":  "1A",
+                            "farePerKm":  4.20,
+                            "minimumFare":  1250.00,
+                            "platformFee":  30.00,
+                            "gstPercent":  5.00
+                        },
+                        {
+                            "id":  2,
+                            "seatClass":  "SECOND_AC",
+                            "seatClassLabel":  "2A",
+                            "farePerKm":  3.00,
+                            "minimumFare":  800.00,
+                            "platformFee":  30.00,
+                            "gstPercent":  5.00
+                        },
+                        {
+                            "id":  6,
+                            "seatClass":  "SECOND_SEATING",
+                            "seatClassLabel":  "2S",
+                            "farePerKm":  0.40,
+                            "minimumFare":  60.00,
+                            "platformFee":  30.00,
+                            "gstPercent":  5.00
+                        },
+                        {
+                            "id":  4,
+                            "seatClass":  "SLEEPER",
+                            "seatClassLabel":  "SL",
+                            "farePerKm":  0.80,
+                            "minimumFare":  150.00,
+                            "platformFee":  30.00,
+                            "gstPercent":  5.00
+                        },
+                        {
+                            "id":  3,
+                            "seatClass":  "THIRD_AC",
+                            "seatClassLabel":  "3A",
+                            "farePerKm":  2.00,
+                            "minimumFare":  500.00,
+                            "platformFee":  30.00,
+                            "gstPercent":  5.00
+                        }
+                    ],
+    "admin_bookings":  {
+                           "content":  [
+
+                                       ],
+                           "page":  0,
+                           "size":  20,
+                           "totalElements":  0,
+                           "totalPages":  0,
+                           "first":  true,
+                           "last":  true
+                       },
+    "admin_announce":  [
+                           {
+                               "id":  82,
+                               "title":  "Reach check",
+                               "message":  "second notice",
+                               "createdAt":  "2026-10-03T22:15:39.579981",
+                               "audience":  3,
+                               "readCount":  0
+                           },
+                           {
+                               "id":  81,
+                               "title":  "Phase 9 platform notice",
+                               "message":  "Announcement delivery is now tracked per person.",
+                               "createdAt":  "2026-10-03T22:15:39.317261",
+                               "audience":  3,
+                               "readCount":  1
+                           }
+                       ],
+    "admin_audit":  {
+                        "content":  [
+                                        {
+                                            "id":  8,
+                                            "action":  "USER_ACTIVATED",
+                                            "entityType":  "USER",
+                                            "entityId":  3,
+                                            "summary":  "Admin User (ADMIN) re-activated Demo Passenger (passenger@yatrarail.demo)",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-10T14:10:02.01735"
+                                        },
+                                        {
+                                            "id":  7,
+                                            "action":  "USER_DEACTIVATED",
+                                            "entityType":  "USER",
+                                            "entityId":  3,
+                                            "summary":  "Admin User (ADMIN) deactivated Demo Passenger (passenger@yatrarail.demo)",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-10T14:09:51.508246"
+                                        },
+                                        {
+                                            "id":  6,
+                                            "action":  "ANNOUNCEMENT_SENT",
+                                            "entityType":  "ANNOUNCEMENT",
+                                            "entityId":  84,
+                                            "summary":  "Admin User (ADMIN) published the announcement \"Phase 10 smoke 2\"",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-10T12:35:33.306955"
+                                        },
+                                        {
+                                            "id":  5,
+                                            "action":  "ANNOUNCEMENT_SENT",
+                                            "entityType":  "ANNOUNCEMENT",
+                                            "entityId":  83,
+                                            "summary":  "Admin User (ADMIN) published the announcement \"Phase 10 smoke\"",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-10T12:12:48.47499"
+                                        },
+                                        {
+                                            "id":  4,
+                                            "action":  "ANNOUNCEMENT_SENT",
+                                            "entityType":  "ANNOUNCEMENT",
+                                            "entityId":  82,
+                                            "summary":  "Admin User (ADMIN) published the announcement \"Reach check\"",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-03T22:15:39.584176"
+                                        },
+                                        {
+                                            "id":  3,
+                                            "action":  "ANNOUNCEMENT_SENT",
+                                            "entityType":  "ANNOUNCEMENT",
+                                            "entityId":  81,
+                                            "summary":  "Admin User (ADMIN) published the announcement \"Phase 9 platform notice\"",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-03T22:15:39.331497"
+                                        },
+                                        {
+                                            "id":  2,
+                                            "action":  "USER_ROLE_CHANGED",
+                                            "entityType":  "USER",
+                                            "entityId":  32,
+                                            "summary":  "Admin User (ADMIN) updated P7 Live Staff: phone to +91 90000 00008, age to 30, role from STAFF to ADMIN",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-01T01:17:59.042385"
+                                        },
+                                        {
+                                            "id":  1,
+                                            "action":  "USER_CREATED",
+                                            "entityType":  "USER",
+                                            "entityId":  32,
+                                            "summary":  "Admin User (ADMIN) created the account P7 Live Staff (p7live-staff@example.com) as STAFF",
+                                            "actorId":  1,
+                                            "actorName":  "Admin User",
+                                            "actorEmail":  "admin@yatrarail.demo",
+                                            "actorRole":  "ADMIN",
+                                            "createdAt":  "2026-10-01T01:17:58.962361"
+                                        }
+                                    ],
+                        "page":  0,
+                        "size":  20,
+                        "totalElements":  8,
+                        "totalPages":  1,
+                        "first":  true,
+                        "last":  true
+                    },
+    "admin_audit_actions":  [
+                                "ANNOUNCEMENT_SENT",
+                                "USER_ACTIVATED",
+                                "USER_CREATED",
+                                "USER_DEACTIVATED",
+                                "USER_ROLE_CHANGED"
+                            ],
+    "admin_quotas":  [
+                         {
+                             "id":  18,
+                             "trainId":  1,
+                             "trainNumber":  "12301",
+                             "trainName":  "Howrah Rajdhani Express",
+                             "seatClass":  "FIRST_AC",
+                             "seatClassLabel":  "1A",
+                             "totalCapacity":  18,
+                             "generalSeats":  18,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  1,
+                             "trainId":  1,
+                             "trainNumber":  "12301",
+                             "trainName":  "Howrah Rajdhani Express",
+                             "seatClass":  "SECOND_AC",
+                             "seatClassLabel":  "2A",
+                             "totalCapacity":  48,
+                             "generalSeats":  48,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  19,
+                             "trainId":  1,
+                             "trainNumber":  "12301",
+                             "trainName":  "Howrah Rajdhani Express",
+                             "seatClass":  "THIRD_AC",
+                             "seatClassLabel":  "3A",
+                             "totalCapacity":  64,
+                             "generalSeats":  64,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  3,
+                             "trainId":  2,
+                             "trainNumber":  "12951",
+                             "trainName":  "Mumbai Rajdhani Express",
+                             "seatClass":  "FIRST_AC",
+                             "seatClassLabel":  "1A",
+                             "totalCapacity":  18,
+                             "generalSeats":  18,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  22,
+                             "trainId":  2,
+                             "trainNumber":  "12951",
+                             "trainName":  "Mumbai Rajdhani Express",
+                             "seatClass":  "SECOND_AC",
+                             "seatClassLabel":  "2A",
+                             "totalCapacity":  48,
+                             "generalSeats":  48,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  6,
+                             "trainId":  2,
+                             "trainNumber":  "12951",
+                             "trainName":  "Mumbai Rajdhani Express",
+                             "seatClass":  "THIRD_AC",
+                             "seatClassLabel":  "3A",
+                             "totalCapacity":  64,
+                             "generalSeats":  64,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  8,
+                             "trainId":  3,
+                             "trainNumber":  "12259",
+                             "trainName":  "Sealdah Duronto Express",
+                             "seatClass":  "FIRST_AC",
+                             "seatClassLabel":  "1A",
+                             "totalCapacity":  18,
+                             "generalSeats":  18,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  20,
+                             "trainId":  3,
+                             "trainNumber":  "12259",
+                             "trainName":  "Sealdah Duronto Express",
+                             "seatClass":  "SECOND_AC",
+                             "seatClassLabel":  "2A",
+                             "totalCapacity":  48,
+                             "generalSeats":  48,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  21,
+                             "trainId":  3,
+                             "trainNumber":  "12259",
+                             "trainName":  "Sealdah Duronto Express",
+                             "seatClass":  "SLEEPER",
+                             "seatClassLabel":  "SL",
+                             "totalCapacity":  72,
+                             "generalSeats":  72,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  17,
+                             "trainId":  3,
+                             "trainNumber":  "12259",
+                             "trainName":  "Sealdah Duronto Express",
+                             "seatClass":  "THIRD_AC",
+                             "seatClassLabel":  "3A",
+                             "totalCapacity":  64,
+                             "generalSeats":  64,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  12,
+                             "trainId":  4,
+                             "trainNumber":  "12621",
+                             "trainName":  "Tamil Nadu Express",
+                             "seatClass":  "FIRST_AC",
+                             "seatClassLabel":  "1A",
+                             "totalCapacity":  18,
+                             "generalSeats":  18,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  10,
+                             "trainId":  4,
+                             "trainNumber":  "12621",
+                             "trainName":  "Tamil Nadu Express",
+                             "seatClass":  "SECOND_AC",
+                             "seatClassLabel":  "2A",
+                             "totalCapacity":  48,
+                             "generalSeats":  48,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  15,
+                             "trainId":  4,
+                             "trainNumber":  "12621",
+                             "trainName":  "Tamil Nadu Express",
+                             "seatClass":  "SLEEPER",
+                             "seatClassLabel":  "SL",
+                             "totalCapacity":  72,
+                             "generalSeats":  72,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  13,
+                             "trainId":  4,
+                             "trainNumber":  "12621",
+                             "trainName":  "Tamil Nadu Express",
+                             "seatClass":  "THIRD_AC",
+                             "seatClassLabel":  "3A",
+                             "totalCapacity":  64,
+                             "generalSeats":  64,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  11,
+                             "trainId":  6,
+                             "trainNumber":  "12138",
+                             "trainName":  "Punjab Mail",
+                             "seatClass":  "FIRST_AC",
+                             "seatClassLabel":  "1A",
+                             "totalCapacity":  18,
+                             "generalSeats":  18,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  2,
+                             "trainId":  6,
+                             "trainNumber":  "12138",
+                             "trainName":  "Punjab Mail",
+                             "seatClass":  "SECOND_AC",
+                             "seatClassLabel":  "2A",
+                             "totalCapacity":  48,
+                             "generalSeats":  48,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  14,
+                             "trainId":  6,
+                             "trainNumber":  "12138",
+                             "trainName":  "Punjab Mail",
+                             "seatClass":  "SLEEPER",
+                             "seatClassLabel":  "SL",
+                             "totalCapacity":  72,
+                             "generalSeats":  72,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  5,
+                             "trainId":  6,
+                             "trainNumber":  "12138",
+                             "trainName":  "Punjab Mail",
+                             "seatClass":  "THIRD_AC",
+                             "seatClassLabel":  "3A",
+                             "totalCapacity":  64,
+                             "generalSeats":  64,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  7,
+                             "trainId":  7,
+                             "trainNumber":  "18409",
+                             "trainName":  "Bhubaneswar Passenger",
+                             "seatClass":  "FIRST_AC",
+                             "seatClassLabel":  "1A",
+                             "totalCapacity":  18,
+                             "generalSeats":  18,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  9,
+                             "trainId":  7,
+                             "trainNumber":  "18409",
+                             "trainName":  "Bhubaneswar Passenger",
+                             "seatClass":  "SECOND_AC",
+                             "seatClassLabel":  "2A",
+                             "totalCapacity":  48,
+                             "generalSeats":  48,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  16,
+                             "trainId":  7,
+                             "trainNumber":  "18409",
+                             "trainName":  "Bhubaneswar Passenger",
+                             "seatClass":  "SLEEPER",
+                             "seatClassLabel":  "SL",
+                             "totalCapacity":  72,
+                             "generalSeats":  72,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         },
+                         {
+                             "id":  4,
+                             "trainId":  7,
+                             "trainNumber":  "18409",
+                             "trainName":  "Bhubaneswar Passenger",
+                             "seatClass":  "THIRD_AC",
+                             "seatClassLabel":  "3A",
+                             "totalCapacity":  64,
+                             "generalSeats":  64,
+                             "tatkalSeats":  0,
+                             "seniorSeats":  0,
+                             "ladiesSeats":  0,
+                             "divyangSeats":  0,
+                             "staffSeats":  0,
+                             "tatkalWindowDays":  1,
+                             "active":  true
+                         }
+                     ],
+    "admin_quota_fares":  [
+                              {
+                                  "id":  11,
+                                  "seatClass":  "CHAIR_CAR",
+                                  "seatClassLabel":  "CC",
+                                  "quota":  "DIVYANG",
+                                  "quotaLabel":  "Divyang",
+                                  "quotaDescription":  "Passengers holding a declared disability certificate",
+                                  "discountPercent":  50,
+                                  "note":  "Divyang concession (simulated)"
+                              },
+                              {
+                                  "id":  5,
+                                  "seatClass":  "CHAIR_CAR",
+                                  "seatClassLabel":  "CC",
+                                  "quota":  "SENIOR",
+                                  "quotaLabel":  "Senior Citizen",
+                                  "quotaDescription":  "Passengers aged 60 or above",
+                                  "discountPercent":  40,
+                                  "note":  "Senior citizen concession (simulated)"
+                              },
+                              {
+                                  "id":  7,
+                                  "seatClass":  "FIRST_AC",
+                                  "seatClassLabel":  "1A",
+                                  "quota":  "DIVYANG",
+                                  "quotaLabel":  "Divyang",
+                                  "quotaDescription":  "Passengers holding a declared disability certificate",
+                                  "discountPercent":  50,
+                                  "note":  "Divyang concession (simulated)"
+                              },
+                              {
+                                  "id":  1,
+                                  "seatClass":  "FIRST_AC",
+                                  "seatClassLabel":  "1A",
+                                  "quota":  "SENIOR",
+                                  "quotaLabel":  "Senior Citizen",
+                                  "quotaDescription":  "Passengers aged 60 or above",
+                                  "discountPercent":  40,
+                                  "note":  "Senior citizen concession (simulated)"
+                              },
+                              {
+                                  "id":  8,
+                                  "seatClass":  "SECOND_AC",
+                                  "seatClassLabel":  "2A",
+                                  "quota":  "DIVYANG",
+                                  "quotaLabel":  "Divyang",
+                                  "quotaDescription":  "Passengers holding a declared disability certificate",
+                                  "discountPercent":  50,
+                                  "note":  "Divyang concession (simulated)"
+                              },
+                              {
+                                  "id":  2,
+                                  "seatClass":  "SECOND_AC",
+                                  "seatClassLabel":  "2A",
+                                  "quota":  "SENIOR",
+                                  "quotaLabel":  "Senior Citizen",
+                                  "quotaDescription":  "Passengers aged 60 or above",
+                                  "discountPercent":  40,
+                                  "note":  "Senior citizen concession (simulated)"
+                              },
+                              {
+                                  "id":  12,
+                                  "seatClass":  "SECOND_SEATING",
+                                  "seatClassLabel":  "2S",
+                                  "quota":  "DIVYANG",
+                                  "quotaLabel":  "Divyang",
+                                  "quotaDescription":  "Passengers holding a declared disability certificate",
+                                  "discountPercent":  50,
+                                  "note":  "Divyang concession (simulated)"
+                              },
+                              {
+                                  "id":  6,
+                                  "seatClass":  "SECOND_SEATING",
+                                  "seatClassLabel":  "2S",
+                                  "quota":  "SENIOR",
+                                  "quotaLabel":  "Senior Citizen",
+                                  "quotaDescription":  "Passengers aged 60 or above",
+                                  "discountPercent":  40,
+                                  "note":  "Senior citizen concession (simulated)"
+                              },
+                              {
+                                  "id":  10,
+                                  "seatClass":  "SLEEPER",
+                                  "seatClassLabel":  "SL",
+                                  "quota":  "DIVYANG",
+                                  "quotaLabel":  "Divyang",
+                                  "quotaDescription":  "Passengers holding a declared disability certificate",
+                                  "discountPercent":  50,
+                                  "note":  "Divyang concession (simulated)"
+                              },
+                              {
+                                  "id":  4,
+                                  "seatClass":  "SLEEPER",
+                                  "seatClassLabel":  "SL",
+                                  "quota":  "SENIOR",
+                                  "quotaLabel":  "Senior Citizen",
+                                  "quotaDescription":  "Passengers aged 60 or above",
+                                  "discountPercent":  40,
+                                  "note":  "Senior citizen concession (simulated)"
+                              },
+                              {
+                                  "id":  9,
+                                  "seatClass":  "THIRD_AC",
+                                  "seatClassLabel":  "3A",
+                                  "quota":  "DIVYANG",
+                                  "quotaLabel":  "Divyang",
+                                  "quotaDescription":  "Passengers holding a declared disability certificate",
+                                  "discountPercent":  50,
+                                  "note":  "Divyang concession (simulated)"
+                              },
+                              {
+                                  "id":  3,
+                                  "seatClass":  "THIRD_AC",
+                                  "seatClassLabel":  "3A",
+                                  "quota":  "SENIOR",
+                                  "quotaLabel":  "Senior Citizen",
+                                  "quotaDescription":  "Passengers aged 60 or above",
+                                  "discountPercent":  40,
+                                  "note":  "Senior citizen concession (simulated)"
+                              }
+                          ],
+    "admin_payments":  {
+                           "content":  [
+
+                                       ],
+                           "page":  0,
+                           "size":  20,
+                           "totalElements":  0,
+                           "totalPages":  0,
+                           "first":  true,
+                           "last":  true
+                       },
+    "admin_refunds":  {
+                          "content":  [
+
+                                      ],
+                          "page":  0,
+                          "size":  20,
+                          "totalElements":  0,
+                          "totalPages":  0,
+                          "first":  true,
+                          "last":  true
+                      },
+    "admin_recon":  {
+                        "generatedAt":  "2026-10-10T21:13:25.6999833",
+                        "totalCollected":  0.00,
+                        "totalRefunded":  0.00,
+                        "totalFailedAttempts":  0.00,
+                        "netCollected":  0.00,
+                        "paymentAttemptCount":  0,
+                        "settledPaymentCount":  0,
+                        "failedPaymentCount":  0,
+                        "refundCount":  0,
+                        "pendingRefundCount":  0,
+                        "failedRefundCount":  0,
+                        "bookingCount":  0,
+                        "paidBookingCount":  0,
+                        "reconciled":  true,
+                        "issues":  [
+
+                                   ]
+                    },
+    "admin_report_ops":  {
+                             "from":  "2026-10-11",
+                             "to":  "2026-10-11",
+                             "totalBookings":  0,
+                             "confirmedBookings":  0,
+                             "cancelledBookings":  0,
+                             "waitlistedBookings":  0,
+                             "racBookings":  0,
+                             "expiredBookings":  0,
+                             "paymentFailedBookings":  0,
+                             "paymentPendingBookings":  0,
+                             "grossFare":  0,
+                             "platformFees":  0,
+                             "passengerCount":  0,
+                             "totalUsers":  4,
+                             "byStatus":  {
+
+                                          },
+                             "daily":  [
+
+                                       ],
+                             "byTrain":  [
+
+                                         ],
+                             "byRoute":  [
+
+                                         ]
+                         },
+    "admin_report_refunds":  {
+                                 "byStatus":  {
+                                                  "PENDING":  0,
+                                                  "PROCESSED":  0,
+                                                  "FAILED":  0
+                                              },
+                                 "refundedTotal":  0,
+                                 "pendingTotal":  0,
+                                 "failedTotal":  0
+                             },
+    "staff_dashboard":  {
+                            "journeyDate":  "2026-10-11",
+                            "activeTrains":  6,
+                            "totalBookings":  0,
+                            "confirmedBookings":  0,
+                            "racBookings":  0,
+                            "waitlistedBookings":  0,
+                            "totalPassengers":  0,
+                            "boardedPassengers":  0,
+                            "notBoardedPassengers":  0,
+                            "noShowPassengers":  0,
+                            "openIncidents":  0,
+                            "resolvedIncidents":  0,
+                            "openAssistanceRequests":  0,
+                            "resolvedAssistanceRequests":  0
+                        },
+    "staff_trains":  [
+                         {
+                             "id":  1,
+                             "trainNumber":  "12301",
+                             "name":  "Howrah Rajdhani Express",
+                             "type":  "RAJDHANI",
+                             "departureTime":  "16:55:00",
+                             "arrivalTime":  "10:05:00",
+                             "active":  true
+                         },
+                         {
+                             "id":  2,
+                             "trainNumber":  "12951",
+                             "name":  "Mumbai Rajdhani Express",
+                             "type":  "RAJDHANI",
+                             "departureTime":  "16:25:00",
+                             "arrivalTime":  "08:15:00",
+                             "active":  true
+                         },
+                         {
+                             "id":  3,
+                             "trainNumber":  "12259",
+                             "name":  "Sealdah Duronto Express",
+                             "type":  "DURONTO",
+                             "departureTime":  "08:25:00",
+                             "arrivalTime":  "23:55:00",
+                             "active":  true
+                         },
+                         {
+                             "id":  4,
+                             "trainNumber":  "12621",
+                             "name":  "Tamil Nadu Express",
+                             "type":  "SUPERFAST",
+                             "departureTime":  "22:30:00",
+                             "arrivalTime":  "07:15:00",
+                             "active":  true
+                         },
+                         {
+                             "id":  6,
+                             "trainNumber":  "12138",
+                             "name":  "Punjab Mail",
+                             "type":  "EXPRESS",
+                             "departureTime":  "21:10:00",
+                             "arrivalTime":  "14:40:00",
+                             "active":  true
+                         },
+                         {
+                             "id":  7,
+                             "trainNumber":  "18409",
+                             "name":  "Bhubaneswar Passenger",
+                             "type":  "PASSENGER",
+                             "departureTime":  "06:45:00",
+                             "arrivalTime":  "13:20:00",
+                             "active":  true
+                         }
+                     ],
+    "staff_incidents":  [
+
+                        ],
+    "staff_assistance":  [
+
+                         ],
+    "quote":  {
+                  "trainId":  1,
+                  "trainNumber":  "12301",
+                  "trainName":  "Howrah Rajdhani Express",
+                  "coachId":  2,
+                  "coachCode":  "B1",
+                  "seatClass":  "SECOND_AC",
+                  "seatClassLabel":  "2A",
+                  "sourceStationId":  1,
+                  "sourceStationName":  "New Delhi",
+                  "destinationStationId":  3,
+                  "destinationStationName":  "Howrah Junction",
+                  "journeyDate":  "2026-10-11",
+                  "distanceKm":  1450,
+                  "passengers":  1,
+                  "farePerPassenger":  4350.00,
+                  "totalFare":  4597.50,
+                  "totalSeats":  48,
+                  "availableSeats":  48,
+                  "racSeatsAvailable":  2,
+                  "status":  "AVAILABLE",
+                  "wouldConfirm":  1,
+                  "wouldRac":  0,
+                  "wouldWaitlist":  0,
+                  "fareBreakdown":  {
+                                        "currency":  "INR",
+                                        "coachId":  2,
+                                        "coachCode":  "B1",
+                                        "seatClass":  "SECOND_AC",
+                                        "seatClassLabel":  "2A",
+                                        "distanceKm":  1450,
+                                        "coachBaseFare":  1500.00,
+                                        "farePerKm":  3.00,
+                                        "distanceFare":  4350.00,
+                                        "minimumFare":  800.00,
+                                        "fareBasis":  "DISTANCE",
+                                        "grossFarePerPassenger":  4350.00,
+                                        "passengers":  [
+                                                           {
+                                                               "fullName":  "Demo Traveler",
+                                                               "age":  30,
+                                                               "gender":  "Male",
+                                                               "quota":  "GENERAL",
+                                                               "quotaLabel":  "General",
+                                                               "discountPercent":  0,
+                                                               "grossFare":  4350.00,
+                                                               "discountAmount":  0.00,
+                                                               "payableFare":  4350.00,
+                                                               "quotaNote":  null
+                                                           }
+                                                       ],
+                                        "grossFareTotal":  4350.00,
+                                        "discountTotal":  0.00,
+                                        "passengerFareTotal":  4350.00,
+                                        "platformFee":  30.00,
+                                        "gstPercent":  5.00,
+                                        "gstAmount":  217.50,
+                                        "totalPayable":  4597.50,
+                                        "notes":  [
+                                                      "Simulated YatraRail tariff for academic demonstration - not an official Indian Railways fare.",
+                                                      "Fare derived from 3.00 per km over the 1450 km booked segment.",
+                                                      "GST at 5.00% is applied to the passenger fare subtotal. The platform fee is not taxed.",
+                                                      "A flat platform fee of 30.00 is charged once per booking."
+                                                  ]
+                                    },
+                  "quotaAvailability":  [
+                                            {
+                                                "quota":  "GENERAL",
+                                                "label":  "General",
+                                                "description":  "Open to every passenger",
+                                                "capacity":  48,
+                                                "used":  0,
+                                                "remaining":  48,
+                                                "reserved":  false,
+                                                "open":  true,
+                                                "unavailableReason":  null
+                                            },
+                                            {
+                                                "quota":  "TATKAL",
+                                                "label":  "Tatkal (simulated)",
+                                                "description":  "Emergency quota that opens just before departure",
+                                                "capacity":  0,
+                                                "used":  0,
+                                                "remaining":  0,
+                                                "reserved":  true,
+                                                "open":  false,
+                                                "unavailableReason":  "The Tatkal (simulated) quota only opens 1 day(s) before departure"
+                                            },
+                                            {
+                                                "quota":  "SENIOR",
+                                                "label":  "Senior Citizen",
+                                                "description":  "Passengers aged 60 or above",
+                                                "capacity":  0,
+                                                "used":  0,
+                                                "remaining":  0,
+                                                "reserved":  true,
+                                                "open":  true,
+                                                "unavailableReason":  "No seats are reserved for this quota in this class"
+                                            },
+                                            {
+                                                "quota":  "LADIES",
+                                                "label":  "Ladies",
+                                                "description":  "Female passengers",
+                                                "capacity":  0,
+                                                "used":  0,
+                                                "remaining":  0,
+                                                "reserved":  true,
+                                                "open":  true,
+                                                "unavailableReason":  "No seats are reserved for this quota in this class"
+                                            },
+                                            {
+                                                "quota":  "DIVYANG",
+                                                "label":  "Divyang",
+                                                "description":  "Passengers holding a declared disability certificate",
+                                                "capacity":  0,
+                                                "used":  0,
+                                                "remaining":  0,
+                                                "reserved":  true,
+                                                "open":  true,
+                                                "unavailableReason":  "No seats are reserved for this quota in this class"
+                                            },
+                                            {
+                                                "quota":  "STAFF",
+                                                "label":  "Staff Quota",
+                                                "description":  "YatraRail staff and their dependants",
+                                                "capacity":  0,
+                                                "used":  0,
+                                                "remaining":  0,
+                                                "reserved":  true,
+                                                "open":  true,
+                                                "unavailableReason":  "No seats are reserved for this quota in this class"
+                                            }
+                                        ]
+              },
+    "booking_created":  {
+                            "id":  35,
+                            "bookingReference":  "YRCMHB3UD7",
+                            "trainName":  "Howrah Rajdhani Express",
+                            "trainNumber":  "12301",
+                            "sourceStationName":  "New Delhi",
+                            "destinationStationName":  "Howrah Junction",
+                            "journeyDate":  "2026-10-11",
+                            "seatClass":  "2A",
+                            "status":  "PAYMENT_PENDING",
+                            "totalFare":  4597.50,
+                            "distanceKm":  1450,
+                            "farePerPassenger":  4350.00,
+                            "fareBreakdown":  {
+                                                  "currency":  "INR",
+                                                  "coachId":  2,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "distanceKm":  1450,
+                                                  "coachBaseFare":  1500.00,
+                                                  "farePerKm":  3.00,
+                                                  "distanceFare":  4350.00,
+                                                  "minimumFare":  800.00,
+                                                  "fareBasis":  "DISTANCE",
+                                                  "grossFarePerPassenger":  4350.00,
+                                                  "passengers":  [
+                                                                     {
+                                                                         "fullName":  "Demo Traveler",
+                                                                         "age":  30,
+                                                                         "gender":  "Male",
+                                                                         "quota":  "GENERAL",
+                                                                         "quotaLabel":  "General",
+                                                                         "discountPercent":  0,
+                                                                         "grossFare":  4350.00,
+                                                                         "discountAmount":  0.00,
+                                                                         "payableFare":  4350.00,
+                                                                         "quotaNote":  null
+                                                                     }
+                                                                 ],
+                                                  "grossFareTotal":  4350.00,
+                                                  "discountTotal":  0.00,
+                                                  "passengerFareTotal":  4350.00,
+                                                  "platformFee":  30.00,
+                                                  "gstPercent":  5.00,
+                                                  "gstAmount":  217.50,
+                                                  "totalPayable":  4597.50,
+                                                  "notes":  [
+                                                                "Fare as stored when this booking was created. Simulated YatraRail tariff - not an official Indian Railways fare."
+                                                            ]
+                                              },
+                            "paymentDeadline":  "2026-10-10T21:25:58.0906067",
+                            "createdAt":  "2026-10-10T21:15:58.093138",
+                            "passengers":  [
+                                               {
+                                                   "id":  53,
+                                                   "fullName":  "Demo Traveler",
+                                                   "age":  30,
+                                                   "gender":  "Male",
+                                                   "berthPreference":  null,
+                                                   "coachCode":  "B1",
+                                                   "seatNumber":  1,
+                                                   "berthType":  "LOWER",
+                                                   "passengerStatus":  "CONFIRMED",
+                                                   "waitlistPosition":  null,
+                                                   "rac":  false,
+                                                   "quota":  "GENERAL",
+                                                   "quotaLabel":  "General",
+                                                   "quotaDiscountPercent":  0,
+                                                   "fareAmount":  4350.00,
+                                                   "quotaNote":  null
+                                               }
+                                           ],
+                            "payment":  null
+                        },
+    "booking_paid":  {
+                         "id":  35,
+                         "bookingReference":  "YRCMHB3UD7",
+                         "trainName":  "Howrah Rajdhani Express",
+                         "trainNumber":  "12301",
+                         "sourceStationName":  "New Delhi",
+                         "destinationStationName":  "Howrah Junction",
+                         "journeyDate":  "2026-10-11",
+                         "seatClass":  "2A",
+                         "status":  "CONFIRMED",
+                         "totalFare":  4597.50,
+                         "distanceKm":  1450,
+                         "farePerPassenger":  4350.00,
+                         "fareBreakdown":  {
+                                               "currency":  "INR",
+                                               "coachId":  2,
+                                               "coachCode":  "B1",
+                                               "seatClass":  "SECOND_AC",
+                                               "seatClassLabel":  "2A",
+                                               "distanceKm":  1450,
+                                               "coachBaseFare":  1500.00,
+                                               "farePerKm":  3.00,
+                                               "distanceFare":  4350.00,
+                                               "minimumFare":  800.00,
+                                               "fareBasis":  "DISTANCE",
+                                               "grossFarePerPassenger":  4350.00,
+                                               "passengers":  [
+                                                                  {
+                                                                      "fullName":  "Demo Traveler",
+                                                                      "age":  30,
+                                                                      "gender":  "Male",
+                                                                      "quota":  "GENERAL",
+                                                                      "quotaLabel":  "General",
+                                                                      "discountPercent":  0,
+                                                                      "grossFare":  4350.00,
+                                                                      "discountAmount":  0.00,
+                                                                      "payableFare":  4350.00,
+                                                                      "quotaNote":  null
+                                                                  }
+                                                              ],
+                                               "grossFareTotal":  4350.00,
+                                               "discountTotal":  0.00,
+                                               "passengerFareTotal":  4350.00,
+                                               "platformFee":  30.00,
+                                               "gstPercent":  5.00,
+                                               "gstAmount":  217.50,
+                                               "totalPayable":  4597.50,
+                                               "notes":  [
+                                                             "Fare as stored when this booking was created. Simulated YatraRail tariff - not an official Indian Railways fare."
+                                                         ]
+                                           },
+                         "paymentDeadline":  null,
+                         "createdAt":  "2026-10-10T21:15:58.093138",
+                         "passengers":  [
+                                            {
+                                                "id":  53,
+                                                "fullName":  "Demo Traveler",
+                                                "age":  30,
+                                                "gender":  "Male",
+                                                "berthPreference":  null,
+                                                "coachCode":  "B1",
+                                                "seatNumber":  1,
+                                                "berthType":  "LOWER",
+                                                "passengerStatus":  "CONFIRMED",
+                                                "waitlistPosition":  null,
+                                                "rac":  false,
+                                                "quota":  "GENERAL",
+                                                "quotaLabel":  "General",
+                                                "quotaDiscountPercent":  0,
+                                                "fareAmount":  4350.00,
+                                                "quotaNote":  null
+                                            }
+                                        ],
+                         "payment":  {
+                                         "method":  "UPI",
+                                         "amount":  4597.50,
+                                         "status":  "SUCCESS",
+                                         "transactionReference":  "TXNF202380D4C8F495B"
+                                     }
+                     },
+    "booking_details":  {
+                            "id":  35,
+                            "bookingReference":  "YRCMHB3UD7",
+                            "trainName":  "Howrah Rajdhani Express",
+                            "trainNumber":  "12301",
+                            "sourceStationName":  "New Delhi",
+                            "destinationStationName":  "Howrah Junction",
+                            "journeyDate":  "2026-10-11",
+                            "seatClass":  "2A",
+                            "status":  "CONFIRMED",
+                            "totalFare":  4597.50,
+                            "distanceKm":  1450,
+                            "farePerPassenger":  4350.00,
+                            "fareBreakdown":  {
+                                                  "currency":  "INR",
+                                                  "coachId":  2,
+                                                  "coachCode":  "B1",
+                                                  "seatClass":  "SECOND_AC",
+                                                  "seatClassLabel":  "2A",
+                                                  "distanceKm":  1450,
+                                                  "coachBaseFare":  1500.00,
+                                                  "farePerKm":  3.00,
+                                                  "distanceFare":  4350.00,
+                                                  "minimumFare":  800.00,
+                                                  "fareBasis":  "DISTANCE",
+                                                  "grossFarePerPassenger":  4350.00,
+                                                  "passengers":  [
+                                                                     {
+                                                                         "fullName":  "Demo Traveler",
+                                                                         "age":  30,
+                                                                         "gender":  "Male",
+                                                                         "quota":  "GENERAL",
+                                                                         "quotaLabel":  "General",
+                                                                         "discountPercent":  0,
+                                                                         "grossFare":  4350.00,
+                                                                         "discountAmount":  0.00,
+                                                                         "payableFare":  4350.00,
+                                                                         "quotaNote":  null
+                                                                     }
+                                                                 ],
+                                                  "grossFareTotal":  4350.00,
+                                                  "discountTotal":  0.00,
+                                                  "passengerFareTotal":  4350.00,
+                                                  "platformFee":  30.00,
+                                                  "gstPercent":  5.00,
+                                                  "gstAmount":  217.50,
+                                                  "totalPayable":  4597.50,
+                                                  "notes":  [
+                                                                "Fare as stored when this booking was created. Simulated YatraRail tariff - not an official Indian Railways fare."
+                                                            ]
+                                              },
+                            "paymentDeadline":  null,
+                            "createdAt":  "2026-10-10T21:15:58.093138",
+                            "passengers":  [
+                                               {
+                                                   "id":  53,
+                                                   "fullName":  "Demo Traveler",
+                                                   "age":  30,
+                                                   "gender":  "Male",
+                                                   "berthPreference":  null,
+                                                   "coachCode":  "B1",
+                                                   "seatNumber":  1,
+                                                   "berthType":  "LOWER",
+                                                   "passengerStatus":  "CONFIRMED",
+                                                   "waitlistPosition":  null,
+                                                   "rac":  false,
+                                                   "quota":  "GENERAL",
+                                                   "quotaLabel":  "General",
+                                                   "quotaDiscountPercent":  0,
+                                                   "fareAmount":  4350.00,
+                                                   "quotaNote":  null
+                                               }
+                                           ],
+                            "payment":  {
+                                            "method":  "UPI",
+                                            "amount":  4597.50,
+                                            "status":  "SUCCESS",
+                                            "transactionReference":  "TXNF202380D4C8F495B"
+                                        }
+                        },
+    "refund_preview":  {
+                           "bookingId":  35,
+                           "bookingReference":  "YRCMHB3UD7",
+                           "tierLabel":  "Same day or 1 day before departure",
+                           "refundPercent":  25,
+                           "daysBeforeJourney":  1,
+                           "scope":  "FULL",
+                           "lines":  [
+                                         {
+                                             "bookingPassengerId":  53,
+                                             "fullName":  "Demo Traveler",
+                                             "age":  30,
+                                             "quota":  "GENERAL",
+                                             "quotaLabel":  "General",
+                                             "farePaid":  4350.00,
+                                             "gstPaid":  217.50,
+                                             "cancellationCharge":  3425.62,
+                                             "fareRefunded":  1087.50,
+                                             "gstRefunded":  54.38,
+                                             "totalRefunded":  1141.88
+                                         }
+                                     ],
+                           "amountCharged":  4567.50,
+                           "cancellationCharge":  3425.62,
+                           "platformFeeRefunded":  30.00,
+                           "platformFeeForfeited":  0.00,
+                           "fareRefunded":  1087.50,
+                           "gstRefunded":  54.38,
+                           "totalRefund":  1171.88,
+                           "policy":  [
+                                          {
+                                              "label":  "At least 7 days before departure",
+                                              "fromDaysBeforeJourney":  7,
+                                              "refundPercent":  90,
+                                              "appliesTo":  "of the fare plus GST for the passenger(s) cancelled",
+                                              "platformFeeRefunded":  true
+                                          },
+                                          {
+                                              "label":  "2 to 6 days before departure",
+                                              "fromDaysBeforeJourney":  2,
+                                              "refundPercent":  50,
+                                              "appliesTo":  "of the fare plus GST for the passenger(s) cancelled",
+                                              "platformFeeRefunded":  true
+                                          },
+                                          {
+                                              "label":  "Same day or 1 day before departure",
+                                              "fromDaysBeforeJourney":  0,
+                                              "refundPercent":  25,
+                                              "appliesTo":  "of the fare plus GST for the passenger(s) cancelled",
+                                              "platformFeeRefunded":  true
+                                          }
+                                      ],
+                           "platformFeeCharged":  30.00,
+                           "cancellable":  true,
+                           "message":  "Cancelling now returns 1171.88 under the \u0027Same day or 1 day before departure\u0027 tier",
+                           "journeyDate":  "2026-10-11"
+                       },
+    "quota_availability":  [
+                               {
+                                   "quota":  "GENERAL",
+                                   "label":  "General",
+                                   "description":  "Open to every passenger",
+                                   "capacity":  48,
+                                   "used":  1,
+                                   "remaining":  47,
+                                   "reserved":  false,
+                                   "open":  true,
+                                   "unavailableReason":  null
+                               },
+                               {
+                                   "quota":  "TATKAL",
+                                   "label":  "Tatkal (simulated)",
+                                   "description":  "Emergency quota that opens just before departure",
+                                   "capacity":  0,
+                                   "used":  0,
+                                   "remaining":  0,
+                                   "reserved":  true,
+                                   "open":  false,
+                                   "unavailableReason":  "The Tatkal (simulated) quota only opens 1 day(s) before departure"
+                               },
+                               {
+                                   "quota":  "SENIOR",
+                                   "label":  "Senior Citizen",
+                                   "description":  "Passengers aged 60 or above",
+                                   "capacity":  0,
+                                   "used":  0,
+                                   "remaining":  0,
+                                   "reserved":  true,
+                                   "open":  true,
+                                   "unavailableReason":  "No seats are reserved for this quota in this class"
+                               },
+                               {
+                                   "quota":  "LADIES",
+                                   "label":  "Ladies",
+                                   "description":  "Female passengers",
+                                   "capacity":  0,
+                                   "used":  0,
+                                   "remaining":  0,
+                                   "reserved":  true,
+                                   "open":  true,
+                                   "unavailableReason":  "No seats are reserved for this quota in this class"
+                               },
+                               {
+                                   "quota":  "DIVYANG",
+                                   "label":  "Divyang",
+                                   "description":  "Passengers holding a declared disability certificate",
+                                   "capacity":  0,
+                                   "used":  0,
+                                   "remaining":  0,
+                                   "reserved":  true,
+                                   "open":  true,
+                                   "unavailableReason":  "No seats are reserved for this quota in this class"
+                               },
+                               {
+                                   "quota":  "STAFF",
+                                   "label":  "Staff Quota",
+                                   "description":  "YatraRail staff and their dependants",
+                                   "capacity":  0,
+                                   "used":  0,
+                                   "remaining":  0,
+                                   "reserved":  true,
+                                   "open":  true,
+                                   "unavailableReason":  "No seats are reserved for this quota in this class"
+                               }
+                           ],
+    "bookings_pax":  [
+                         {
+                             "id":  35,
+                             "bookingReference":  "YRCMHB3UD7",
+                             "trainName":  "Howrah Rajdhani Express",
+                             "trainNumber":  "12301",
+                             "sourceStationName":  "New Delhi",
+                             "destinationStationName":  "Howrah Junction",
+                             "journeyDate":  "2026-10-11",
+                             "seatClass":  "2A",
+                             "status":  "CONFIRMED",
+                             "totalFare":  4597.50,
+                             "distanceKm":  1450,
+                             "farePerPassenger":  4350.00,
+                             "fareBreakdown":  {
+                                                   "currency":  "INR",
+                                                   "coachId":  2,
+                                                   "coachCode":  "B1",
+                                                   "seatClass":  "SECOND_AC",
+                                                   "seatClassLabel":  "2A",
+                                                   "distanceKm":  1450,
+                                                   "coachBaseFare":  1500.00,
+                                                   "farePerKm":  3.00,
+                                                   "distanceFare":  4350.00,
+                                                   "minimumFare":  800.00,
+                                                   "fareBasis":  "DISTANCE",
+                                                   "grossFarePerPassenger":  4350.00,
+                                                   "passengers":  [
+                                                                      {
+                                                                          "fullName":  "Demo Traveler",
+                                                                          "age":  30,
+                                                                          "gender":  "Male",
+                                                                          "quota":  "GENERAL",
+                                                                          "quotaLabel":  "General",
+                                                                          "discountPercent":  0,
+                                                                          "grossFare":  4350.00,
+                                                                          "discountAmount":  0.00,
+                                                                          "payableFare":  4350.00,
+                                                                          "quotaNote":  null
+                                                                      }
+                                                                  ],
+                                                   "grossFareTotal":  4350.00,
+                                                   "discountTotal":  0.00,
+                                                   "passengerFareTotal":  4350.00,
+                                                   "platformFee":  30.00,
+                                                   "gstPercent":  5.00,
+                                                   "gstAmount":  217.50,
+                                                   "totalPayable":  4597.50,
+                                                   "notes":  [
+                                                                 "Fare as stored when this booking was created. Simulated YatraRail tariff - not an official Indian Railways fare."
+                                                             ]
+                                               },
+                             "paymentDeadline":  null,
+                             "createdAt":  "2026-10-10T21:15:58.093138",
+                             "passengers":  [
+                                                {
+                                                    "id":  53,
+                                                    "fullName":  "Demo Traveler",
+                                                    "age":  30,
+                                                    "gender":  "Male",
+                                                    "berthPreference":  null,
+                                                    "coachCode":  "B1",
+                                                    "seatNumber":  1,
+                                                    "berthType":  "LOWER",
+                                                    "passengerStatus":  "CONFIRMED",
+                                                    "waitlistPosition":  null,
+                                                    "rac":  false,
+                                                    "quota":  "GENERAL",
+                                                    "quotaLabel":  "General",
+                                                    "quotaDiscountPercent":  0,
+                                                    "fareAmount":  4350.00,
+                                                    "quotaNote":  null
+                                                }
+                                            ],
+                             "payment":  {
+                                             "method":  "UPI",
+                                             "amount":  4597.50,
+                                             "status":  "SUCCESS",
+                                             "transactionReference":  "TXNF202380D4C8F495B"
+                                         }
+                         }
+                     ],
+    "payments_pax":  {
+                         "attempts":  [
+                                          {
+                                              "attemptId":  5,
+                                              "bookingId":  35,
+                                              "bookingReference":  "YRCMHB3UD7",
+                                              "trainName":  "Howrah Rajdhani Express",
+                                              "trainNumber":  "12301",
+                                              "sourceStationName":  "New Delhi",
+                                              "destinationStationName":  "Howrah Junction",
+                                              "journeyDate":  "2026-10-11",
+                                              "method":  "UPI",
+                                              "amount":  4597.50,
+                                              "status":  "SUCCESS",
+                                              "transactionReference":  "TXNF202380D4C8F495B",
+                                              "attemptedAt":  "2026-10-10T21:15:58.351579",
+                                              "settled":  true
+                                          }
+                                      ],
+                         "totalAttempted":  4597.50,
+                         "totalSettled":  4597.50,
+                         "totalRefunded":  0.00,
+                         "netPaid":  4597.50,
+                         "attemptCount":  1,
+                         "failedAttemptCount":  0,
+                         "lastActivityAt":  "2026-10-10T21:15:58.351579"
+                     },
+    "ticket":  {
+                   "bookingId":  35,
+                   "bookingReference":  "YRCMHB3UD7",
+                   "trainName":  "Howrah Rajdhani Express",
+                   "trainNumber":  "12301",
+                   "sourceStationName":  "New Delhi",
+                   "destinationStationName":  "Howrah Junction",
+                   "journeyDate":  "2026-10-11",
+                   "departureTime":  "16:55:00",
+                   "arrivalTime":  "13:03:00",
+                   "distanceKm":  1450,
+                   "seatClass":  "2A",
+                   "bookingStatus":  "CONFIRMED",
+                   "validForTravel":  true,
+                   "validityMessage":  "Valid for travel on 2026-10-11",
+                   "bookedByName":  "Demo Passenger",
+                   "passengers":  [
+                                      {
+                                          "id":  53,
+                                          "fullName":  "Demo Traveler",
+                                          "age":  30,
+                                          "gender":  "Male",
+                                          "berthPreference":  null,
+                                          "coachCode":  "B1",
+                                          "seatNumber":  1,
+                                          "berthType":  "LOWER",
+                                          "passengerStatus":  "CONFIRMED",
+                                          "waitlistPosition":  null,
+                                          "rac":  false,
+                                          "quota":  "GENERAL",
+                                          "quotaLabel":  "General",
+                                          "quotaDiscountPercent":  0,
+                                          "fareAmount":  4350.00,
+                                          "quotaNote":  null
+                                      }
+                                  ],
+                   "fareBreakdown":  {
+                                         "currency":  "INR",
+                                         "coachId":  2,
+                                         "coachCode":  "B1",
+                                         "seatClass":  "SECOND_AC",
+                                         "seatClassLabel":  "2A",
+                                         "distanceKm":  1450,
+                                         "coachBaseFare":  1500.00,
+                                         "farePerKm":  3.00,
+                                         "distanceFare":  4350.00,
+                                         "minimumFare":  800.00,
+                                         "fareBasis":  "DISTANCE",
+                                         "grossFarePerPassenger":  4350.00,
+                                         "passengers":  [
+                                                            {
+                                                                "fullName":  "Demo Traveler",
+                                                                "age":  30,
+                                                                "gender":  "Male",
+                                                                "quota":  "GENERAL",
+                                                                "quotaLabel":  "General",
+                                                                "discountPercent":  0,
+                                                                "grossFare":  4350.00,
+                                                                "discountAmount":  0.00,
+                                                                "payableFare":  4350.00,
+                                                                "quotaNote":  null
+                                                            }
+                                                        ],
+                                         "grossFareTotal":  4350.00,
+                                         "discountTotal":  0.00,
+                                         "passengerFareTotal":  4350.00,
+                                         "platformFee":  30.00,
+                                         "gstPercent":  5.00,
+                                         "gstAmount":  217.50,
+                                         "totalPayable":  4597.50,
+                                         "notes":  [
+                                                       "Fare as stored when this booking was created. Simulated YatraRail tariff - not an official Indian Railways fare."
+                                                   ]
+                                     },
+                   "qrPayload":  "YATRARAIL-TICKET.1.yatrarail.YRCMHB3UD7.20736.QyTuXsTvUJNbTNmY5tW1e47AFSPNq0vFnxc-yCDFUhY",
+                   "qrIssuedAt":  "2026-10-10T21:15:58.4597708",
+                   "qrValidUntil":  "2027-10-10T21:15:58.4597708",
+                   "refundPolicy":  [
+                                        {
+                                            "label":  "At least 7 days before departure",
+                                            "fromDaysBeforeJourney":  7,
+                                            "refundPercent":  90,
+                                            "appliesTo":  "of the fare plus GST for the passenger(s) cancelled",
+                                            "platformFeeRefunded":  true
+                                        },
+                                        {
+                                            "label":  "2 to 6 days before departure",
+                                            "fromDaysBeforeJourney":  2,
+                                            "refundPercent":  50,
+                                            "appliesTo":  "of the fare plus GST for the passenger(s) cancelled",
+                                            "platformFeeRefunded":  true
+                                        },
+                                        {
+                                            "label":  "Same day or 1 day before departure",
+                                            "fromDaysBeforeJourney":  0,
+                                            "refundPercent":  25,
+                                            "appliesTo":  "of the fare plus GST for the passenger(s) cancelled",
+                                            "platformFeeRefunded":  true
+                                        }
+                                    ],
+                   "cancellable":  true,
+                   "cancellationMessage":  "Cancel before 2026-10-11 to receive a refund under the tiers below."
+               }
+}

@@ -1,0 +1,863 @@
+/* ==========================================================================
+   YatraRail — COMPONENTS
+   The component library. Every visual primitive in the application is defined
+   here exactly once, in terms of tokens, so a change to the design language is
+   a change to one file.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Icons
+   Every icon is an inline SVG that inherits currentColor. The base rule only
+   guarantees it never gets squeezed by a flex parent.
+   -------------------------------------------------------------------------- */
+.icon { flex: none; }
+.stat-tile-icon .icon,
+.page-header-icon .icon,
+.console-link .icon { display: block; }
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--touch-target);
+  padding: var(--space-3) var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--fs-md);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+.btn:active:not(:disabled) { transform: scale(0.98); }
+.btn:disabled,
+.btn[aria-disabled='true'] { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+.btn-primary {
+  background: var(--fill-accent);
+  color: #fff;                       /* 4.77:1 on --fill-accent */
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--fill-accent-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: var(--border-control);
+}
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--accent-edge);
+  color: var(--ink-accent);
+}
+
+.btn-success {
+  background: var(--fill-success);
+  color: #fff;
+}
+.btn-success:hover:not(:disabled) { background: var(--fill-success-hover); }
+
+.btn-danger {
+  background: transparent;
+  color: var(--ink-danger);
+  border-color: var(--fill-danger);
+}
+.btn-danger:hover:not(:disabled) { background: var(--danger-tint); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+}
+.btn-ghost:hover:not(:disabled) { background: var(--bg-soft); }
+
+/* Icon-only controls keep the 44px touch target without looking oversized. */
+.btn-icon {
+  min-width: var(--touch-target);
+  padding: var(--space-2);
+}
+
+.btn-sm {
+  min-height: 36px;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--fs-base);
+}
+.btn-lg {
+  min-height: 50px;
+  padding: var(--space-4) var(--space-6);
+  font-size: var(--fs-lg);
+}
+.btn-block { width: 100%; }
+
+/* A row of buttons that wraps instead of forcing a horizontal scroll. */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Toggle buttons (filters, view switchers, theme). State is carried by
+   aria-pressed as well as by colour, never by colour alone. */
+.seg-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+}
+.seg {
+  min-height: 36px;
+  padding: var(--space-1) var(--space-4);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.seg:hover { background: var(--bg-soft); color: var(--text); }
+.seg[aria-pressed='true'],
+.seg.is-active {
+  background: var(--accent-tint);
+  color: var(--ink-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Cards & surfaces
+   -------------------------------------------------------------------------- */
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-card);
+}
+
+/* A card that is itself a link or a clickable row lifts on hover. Static cards
+   stay put, so the lift always means "this is interactive". */
+.card-interactive {
+  transition:
+    border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+.card-interactive:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+/* A card header row: title on the left, an action or count on the right. */
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-4);
+}
+.card-head h2,
+.card-head h3 { margin: 0; }
+
+/* A small, dependable section heading used above tables and lists. */
+.section-title {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: 600;
+}
+
+.surface-soft {
+  background: var(--bg-soft);
+  border-radius: var(--radius-md);
+}
+
+/* A labelled group of related rows. */
+.panel {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Forms
+   A .field owns its label, control, hint and error. The control is the single
+   child, so :focus-within on the wrapper gives a single focus treatment for
+   the whole group instead of one rule per input type.
+   -------------------------------------------------------------------------- */
+.field { margin-bottom: var(--space-5); }
+.field:last-child { margin-bottom: 0; }
+
+.field-label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+
+/* A fieldset's legend plus an action on the same row. The legend keeps the
+   group name, the hint explains the rule, the button does the work. */
+.field-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+.field-head .field-hint { margin-top: 0; flex: 1 1 200px; }
+
+.field input,
+.field select,
+.field textarea,
+.control {
+  width: 100%;
+  min-height: var(--touch-target);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: var(--text);
+  transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.field textarea { min-height: 80px; line-height: var(--lh-snug); }
+
+.field input::placeholder,
+.field textarea::placeholder,
+.control::placeholder { color: var(--placeholder); opacity: 1; }
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible,
+.control:focus-visible {
+  outline: none;
+  border-color: var(--focus-ring);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 28%, transparent);
+}
+.field input:disabled,
+.field select:disabled,
+.field textarea:disabled,
+.control:disabled {
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.field input[aria-invalid='true'],
+.field select[aria-invalid='true'],
+.field textarea[aria-invalid='true'],
+.control[aria-invalid='true'] {
+  border-color: var(--fill-danger);
+}
+.field input[aria-invalid='true']:focus-visible,
+.field select[aria-invalid='true']:focus-visible,
+.field textarea[aria-invalid='true']:focus-visible,
+.control[aria-invalid='true']:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--fill-danger) 26%, transparent);
+}
+
+/* Selects get a chevron so the control reads as a choice, not a text field. */
+.field select,
+.control.select {
+  appearance: none;
+  padding-right: var(--space-8);
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+                    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% + 2px), calc(100% - 13px) calc(50% + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.field select option,
+.control.select option { background: var(--bg-elevated); color: var(--text); }
+
+/* Compact control for filter rows outside a .field. */
+.control {
+  min-height: 38px;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--fs-base);
+}
+
+.field-error {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+  color: var(--ink-danger);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+.field-hint {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+/* Checkbox / radio rows: the whole row is the hit target, not the 16px box. */
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.check-list > legend { padding: 0; }
+.check-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out);
+}
+.check-row:hover { background: var(--bg-soft); }
+.check-row:focus-within {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: -2px;
+}
+.check-row input[type='checkbox'],
+.check-row input[type='radio'] {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 3px 0 0;
+  accent-color: var(--fill-accent);
+  cursor: pointer;
+}
+.check-row .check-body { display: flex; flex-direction: column; gap: 2px; }
+.check-row .check-title { font-weight: 600; font-size: var(--fs-md); }
+.check-row .check-meta { color: var(--text-muted); font-size: var(--fs-sm); }
+
+/* --------------------------------------------------------------------------
+   Badges
+   Colour is decoration here: every badge carries its state as text.
+   -------------------------------------------------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 3px var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.badge-confirmed,
+.badge-success { background: var(--success-tint); color: var(--ink-success); border-color: color-mix(in srgb, var(--success-edge) 30%, transparent); }
+.badge-pending,
+.badge-waitlisted { background: var(--warning-tint); color: var(--ink-warning); border-color: color-mix(in srgb, var(--warning-edge) 35%, transparent); }
+.badge-cancelled,
+.badge-failed { background: var(--danger-tint); color: var(--ink-danger); border-color: color-mix(in srgb, var(--danger-edge) 30%, transparent); }
+.badge-neutral,
+.badge-expired { background: var(--bg-soft); color: var(--text-muted); border-color: var(--border); }
+.badge-rac { background: var(--accent-tint); color: var(--ink-accent); border-color: color-mix(in srgb, var(--accent-edge) 30%, transparent); }
+
+/* --------------------------------------------------------------------------
+   Notices & hints
+   -------------------------------------------------------------------------- */
+.notice {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-base);
+  line-height: var(--lh-snug);
+}
+.notice strong { display: block; margin-bottom: 2px; }
+.notice-info { background: var(--accent-tint); color: var(--ink-accent); border-color: color-mix(in srgb, var(--accent-edge) 25%, transparent); }
+.notice-warn { background: var(--warning-tint); color: var(--ink-warning); border-color: color-mix(in srgb, var(--warning-edge) 30%, transparent); }
+.notice-good { background: var(--success-tint); color: var(--ink-success); border-color: color-mix(in srgb, var(--success-edge) 28%, transparent); }
+.notice-bad { background: var(--danger-tint); color: var(--ink-danger); border-color: color-mix(in srgb, var(--danger-edge) 28%, transparent); }
+.notice-muted { background: var(--bg-soft); color: var(--text-muted); border-color: var(--border); }
+
+.seat-alloc {
+  display: inline-block;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-xs);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+/* Hold countdown. */
+.hold-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--accent-tint);
+  color: var(--ink-accent);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.hold-timer-urgent { background: var(--danger-tint); color: var(--ink-danger); }
+.hold-timer-muted { background: var(--bg-soft); color: var(--text-muted); }
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg-elevated);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  font-size: var(--fs-base);
+}
+th, td {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border-strong);
+}
+tbody td { color: var(--text); }
+tbody tr { transition: background var(--dur-fast) var(--ease-out); }
+tbody tr:hover td { background: color-mix(in srgb, var(--accent-tint) 55%, transparent); }
+tbody tr:last-child td { border-bottom: none; }
+
+/* A table that does not need horizontal scroll on small screens. */
+.table-compact { min-width: 0; }
+@media (max-width: 560px) {
+  .table-compact { min-width: 0; font-size: var(--fs-sm); }
+  .table-compact th, .table-compact td { padding: var(--space-2) var(--space-3); }
+}
+
+/* Numeric columns align by digit, which is what makes a fare column readable. */
+.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* The "nothing matches" row that spans a whole table. */
+.table-empty { text-align: center; padding: var(--space-7) var(--space-4); }
+
+/* --------------------------------------------------------------------------
+   States: loading, empty, error
+   -------------------------------------------------------------------------- */
+.state-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-9) var(--space-6);
+  text-align: center;
+  color: var(--text-muted);
+}
+.state-block h3 { color: var(--ink-accent); margin: 0; }
+.state-block p { max-width: 52ch; margin: 0; }
+.state-block .btn { margin-top: var(--space-3); }
+
+/* A rounded badge above an empty / error message, so the state reads as a
+   deliberate panel rather than a stray sentence. */
+.state-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: var(--space-2);
+  border-radius: 50%;
+  background: var(--accent-tint);
+  color: var(--ink-accent);
+}
+.state-icon-bad { background: var(--danger-tint); color: var(--ink-danger); }
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  margin-bottom: var(--space-2);
+  border: 3px solid var(--border);
+  border-top-color: var(--accent-edge);
+  border-radius: 50%;
+  animation: yr-spin 0.7s linear infinite;
+}
+@keyframes yr-spin { to { transform: rotate(360deg); } }
+
+/* --------------------------------------------------------------------------
+   Toasts
+   The stack is a live region. Each toast is announced by a node that exists in
+   the DOM before the text lands in it, which is what makes a screen reader
+   read the message instead of staying silent.
+   -------------------------------------------------------------------------- */
+.toast-stack {
+  position: fixed;
+  top: calc(var(--nav-height) + var(--space-3));
+  right: var(--space-5);
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: min(360px, calc(100vw - var(--space-8)));
+  pointer-events: none;
+}
+/* Two live regions live inside the single fixed stack: one polite for
+   confirmations, one assertive for failures. An empty region collapses
+   completely so it cannot leave a gap. */
+.toast-region {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  pointer-events: auto;
+}
+.toast-region:empty { display: none; }
+.toast {
+  pointer-events: auto;
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+  font-size: var(--fs-base);
+  animation: yr-toast-in var(--dur-base) var(--ease-out);
+}
+.toast-success { border-left-color: var(--success-edge); }
+.toast-error { border-left-color: var(--danger-edge); }
+.toast-info { border-left-color: var(--accent-edge); }
+@keyframes yr-toast-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 560px) {
+  .toast-stack {
+    top: auto;
+    bottom: var(--space-4);
+    left: var(--space-4);
+    right: var(--space-4);
+    width: auto;
+  }
+  .toast { animation: yr-toast-in-mobile var(--dur-base) var(--ease-out); }
+  @keyframes yr-toast-in-mobile {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Modal
+   The backdrop is a button so it is reachable by keyboard and announced by the
+   name "Close dialog" rather than being an unnamed div. Tab is trapped inside
+   the dialog and Escape closes it; see components/Modal.jsx.
+   -------------------------------------------------------------------------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--space-5);
+  overflow-y: auto;
+  background: var(--overlay);
+  backdrop-filter: blur(2px);
+}
+.modal {
+  width: 100%;
+  max-width: 520px;
+  max-height: calc(100vh - var(--space-10));
+  margin: auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
+  animation: yr-modal-in var(--dur-base) var(--ease-out);
+}
+@keyframes yr-modal-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.modal-wide { max-width: 760px; }
+.modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.modal-head h3 { margin: 0; }
+.modal-close {
+  flex: none;
+  min-width: 36px;
+  min-height: 36px;
+  margin: calc(var(--space-2) * -1) calc(var(--space-2) * -1) 0 0;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.modal-close:hover { background: var(--bg-soft); color: var(--text); }
+@media (max-width: 560px) {
+  .modal-backdrop { padding: var(--space-3); align-items: flex-end; }
+  .modal { padding: var(--space-5); max-height: calc(100vh - var(--space-8)); }
+}
+
+/* --------------------------------------------------------------------------
+   Popover (notification bell)
+   -------------------------------------------------------------------------- */
+.popover {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  right: 0;
+  z-index: var(--z-popover);
+  width: min(360px, calc(100vw - var(--space-6)));
+  padding: var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+.notif-wrap { position: relative; display: inline-flex; }
+/* The unread count is a small filled pip, not a full badge, so the bell stays
+   the same size with or without notifications. */
+.notif-count {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: var(--radius-pill);
+  background: var(--fill-danger);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+}
+.notif-list { display: flex; flex-direction: column; gap: var(--space-2); max-height: 320px; overflow-y: auto; }
+.notif-item {
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--bg-soft);
+  border-left: 3px solid var(--accent-edge);
+}
+.notif-item.is-read { border-left-color: transparent; opacity: 0.62; }
+.notif-item-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+.notif-item-body { color: var(--text-muted); font-size: var(--fs-sm); }
+.notif-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-edge);
+  flex: none;
+}
+
+/* --------------------------------------------------------------------------
+   Stat tiles
+   -------------------------------------------------------------------------- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+.stat-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition:
+    border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+/* A tone stripe down the leading edge, so a row of tiles is scannable. */
+.stat-tile::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--tone, var(--border-strong));
+}
+.stat-tile:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-1px); }
+.stat-tile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+.stat-label {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.stat-tile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, currentColor 14%, transparent);
+}
+.stat-value {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.stat-tile-foot {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+.stat-note { color: var(--text-muted); font-size: var(--fs-xs); }
+.stat-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ink-success);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+/* Tone accents for the leading stripe. */
+.tone-accent { --tone: var(--accent-edge); }
+.tone-success { --tone: var(--success-edge); }
+.tone-warning { --tone: var(--warning-edge); }
+.tone-danger { --tone: var(--danger-edge); }
+.tone-info { --tone: var(--ink-info); }
+.tone-neutral { --tone: var(--border-strong); }
+
+/* A tile whose figure is money or a count that must not wrap mid-number. */
+.stat-value-money { color: var(--ink-success); }
+.stat-value-warn { color: var(--ink-warning); }
+.stat-value-bad { color: var(--ink-danger); }
+
+/* --------------------------------------------------------------------------
+   Progress rows (operational proportions)
+   A labelled bar for "boarded / not boarded / no show" and similar splits.
+   -------------------------------------------------------------------------- */
+.progress-row + .progress-row { margin-top: var(--space-4); }
+.progress-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-base);
+}
+.progress-track {
+  height: 9px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transition: width var(--dur-slow) var(--ease-out);
+}
+.progress-bar-success { background: var(--success-edge); }
+.progress-bar-muted { background: var(--border-strong); }
+.progress-bar-warning { background: var(--warning-edge); }
+
+/* A short label + value row used above charts and in dense summaries. */
+.meta-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-size: var(--fs-base);
+}
+
+/* --------------------------------------------------------------------------
+   Definition lists used for every money breakdown in the app
+   -------------------------------------------------------------------------- */
+.totals { margin: 0; }
+.totals > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
+  font-size: var(--fs-base);
+}
+.totals dt { color: var(--text-muted); margin: 0; }
+.totals dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.totals-grand {
+  border-top: 1px solid var(--border);
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  font-size: var(--fs-lg) !important;
+}
+.totals-grand dt { color: var(--text) !important; font-weight: 600; }
+.totals-grand dd { color: var(--ink-accent); font-weight: 700; }
+.totals-grand-good dd { color: var(--ink-success); }
+
+/* --------------------------------------------------------------------------
+   Quote / refund panel
+   -------------------------------------------------------------------------- */
+.quote-box {
+  padding: var(--space-4);
+  background: var(--bg-sunken);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-edge);
+  border-radius: var(--radius-md);
+}
+.quote-box-good { border-left-color: var(--success-edge); }
+.stack > * + * { margin-top: var(--space-4); }
+.nowrap { white-space: nowrap; }
